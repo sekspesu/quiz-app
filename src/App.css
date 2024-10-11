@@ -1,0 +1,125 @@
+/* src/App.css */
+
+/* General Styles */
+.App {
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.App h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+form h2 {
+  margin-bottom: 15px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Word List Styles */
+.word-list {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.word-list h2 {
+  margin-bottom: 15px;
+}
+
+.word-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.word-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+  border-bottom: 1px solid #ddd;
+}
+
+.word-list li:last-child {
+  border-bottom: none;
+}
+
+.word-list button {
+  background-color: #dc3545;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.word-list button:hover {
+  background-color: #c82333;
+}
+
+/* Quiz Section Styles */
+.quiz-section {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.quiz-section h2 {
+  margin-bottom: 15px;
+}
+
+.quiz-section p {
+  font-size: 1.1em;
+}
+
+.quiz-section input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.quiz-section button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quiz-section button:hover {
+  background-color: #218838;
+}
+
+.quiz-section .feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
