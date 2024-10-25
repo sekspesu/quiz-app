@@ -137,3 +137,89 @@ form button:hover {
   margin-top: 10px;
   font-weight: bold;
 }
+
+
+/* src/App.css */
+
+/* Keep your existing styles and modify/add these specific button styles */
+
+/* Add Word Button Style */
+form button, 
+input[type="submit"],
+button.add-word {
+  padding: 10px 20px;
+  background-color: #2ECC40; /* Bright green color matching Start Quiz button */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover,
+input[type="submit"]:hover,
+button.add-word:hover {
+  background-color: #29b739;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Start Quiz Button Style */
+.quiz-section button,
+button.start-quiz {
+  padding: 12px 24px;
+  background-color: #2ECC40;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-section button:hover,
+button.start-quiz:hover {
+  background-color: #29b739;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Update your existing button overrides */
+.word-list button {
+  background-color: #dc3545;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.word-list button:hover {
+  background-color: #c82333;
+}
+
+/* Add Word Section Styles */
+.add-word-section {
+  margin-top: 20px;
+}
+
+.add-word-button {
+  padding: 10px 15px;
+  background-color: #1f2b5e; /* Changed to match Start Quiz green */
+  color: white; /* Changed to white to match Start Quiz */
+  border: none;
+  border-radius: 6px; /* Match border-radius */
+  cursor: pointer;
+  font-size: 14px; /* Match font size */
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-word-button:hover {
+  background-color: #296bb7; /* Match hover color */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}

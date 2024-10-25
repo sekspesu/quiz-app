@@ -57,7 +57,7 @@ function Quiz({ words }) {
           />
           <div className="quiz-buttons">
             <button onClick={checkAnswer}>Submit</button>
-            <button onClick={showAnswer}>I Don't Know</button>
+            <button onClick={showAnswer}>IDK</button>
             <button onClick={startQuiz}>Next Word</button>
           </div>
           {showTranslation && (
