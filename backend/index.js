@@ -17,7 +17,7 @@ app.use(express.json());
 
 // Enable CORS
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://ee-quiz.netlify.app'], // Replace with your frontend URL
+  origin: ['http://localhost:3000', 'https://alderlips.com/'], // Replace with your frontend URL
 }));
 
 // MongoDB Connection URI from environment variables
