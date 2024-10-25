@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Vocabulary Learning App</h1>
+      <h1>Alder's Learning App</h1>
       <AddWordForm onAddWord={addWord} />
       <WordCount wordCount={getUniqueWordCount()} />
       <Quiz words={words} />
