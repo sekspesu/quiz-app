@@ -207,7 +207,7 @@ button.start-quiz:hover {
 
 .add-word-button {
   padding: 10px 15px;
-  background-color: #1f2b5e; /* Changed to match Start Quiz green */
+  background-color: #3f85be; /* Changed to match Start Quiz green */
   color: white; /* Changed to white to match Start Quiz */
   border: none;
   border-radius: 6px; /* Match border-radius */
@@ -222,4 +222,44 @@ button.start-quiz:hover {
   background-color: #296bb7; /* Match hover color */
   transform: translateY(-1px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* src/App.css */
+
+/* Hint Styles */
+.hint {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+  margin-bottom: 15px;
+}
+
+.hint h3 {
+  margin-top: 0;
+}
+
+.hint p {
+  margin: 5px 0;
+}
+
+
+/* Reset Button Styles */
+.reset-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reset-button-container button {
+  padding: 10px 15px;
+  background-color: #dcb535; /* Red color for the reset button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.reset-button-container button:hover {
+  background-color: #606e6c;
+  transform: translateY(-2px);
 }

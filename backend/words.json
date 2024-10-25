@@ -1,49 +1,379 @@
 [
-  { "word": "Exquisite", "translation": "Peen" },
-  { "word": "Initially", "translation": "Esialgu" },
-  { "word": "Constipation", "translation": "Kõhukinnisus" },
-  { "word": "Scrutinize", "translation": "Kontrollima" },
-  { "word": "Predominantly", "translation": "Valdavalt" },
-  { "word": "Subsequent", "translation": "Alljärgnev" },
-  { "word": "Erroneously", "translation": "Ekslikult" },
-  { "word": "Vigilant", "translation": "Valvas" },
-  { "word": "Endeavours", "translation": "Ettevõtmised" },
-  { "word": "Recreational", "translation": "Meelelahutuslik" },
-  { "word": "Implicit", "translation": "Kaudne" },
-  { "word": "Plague", "translation": "Katk" },
-  { "word": "Extingition", "translation": "Kustutamine" },
-  { "word": "Impaling", "translation": "Lööma" },
-  { "word": "Preception", "translation": "Taju" },
-  { "word": "Promiscuous", "translation": "Lubamatu" },
-  { "word": "Petrify", "translation": "Kivistuma" },
-  { "word": "Leisure", "translation": "Vaba aeg" },
-  { "word": "Diverse", "translation": "Mitmekesine" },
-  { "word": "Shin", "translation": "Säär" },
-  { "word": "Humility", "translation": "Alandlikkus" },
-  { "word": "Anticipated", "translation": "Eeldatav" },
-  { "word": "Evolve", "translation": "Arenema" },
-  { "word": "Alignment", "translation": "Joondus" },
-  { "word": "Peasant", "translation": "Talupoeg" },
-  { "word": "Prevails", "translation": "Valitseb" },
-  { "word": "Incoherent", "translation": "Ebaühtlane" },
-  { "word": "Contemporary", "translation": "Kaasaegne" },
-  { "word": "Unvetted", "translation": "Kontrollimata" },
-  { "word": "Cynicism", "translation": "Küünilisus" },
-  { "word": "Conscience", "translation": "Südametunnistus" },
-  { "word": "Audacious", "translation": "Jultunud" },
-  { "word": "Incentives", "translation": "Stiimulid" },
-  { "word": "Perishable", "translation": "Kiiresti riknevad" },
-  { "word": "Inaction", "translation": "Tegevusetus" },
-  { "word": "Insidious", "translation": "Salakaval" },
-  { "word": "Emergent", "translation": "Esilekerkiv" },
-  { "word": "Compounding", "translation": "Ühendamine" },
-  { "word": "Bowel", "translation": "Soolestik" },
-  { "word": "Preserve", "translation": "Säilitama" },
-  { "word": "Entity", "translation": "Üksus" },
-  { "word": "Stumble", "translation": "Komistama" },
-  { "word": "Vague", "translation": "Ebamäärane" },
-  { "word": "Relentless", "translation": "Järelandmatu" },
-  { "word": "Dilute", "translation": "Lahjendama" },
-  { "word": "Saturation", "translation": "Küllastus" },
-  { "word": "Incrementally", "translation": "Järk-järgult" }
+  {
+    "word": "Exquisite",
+    "translation": "Peen",
+    "exampleSentences": [
+      "The chef prepared an exquisite meal that delighted all the guests.",
+      "She wore an exquisite dress made of silk."
+    ]
+  },
+  {
+    "word": "Initially",
+    "translation": "Esialgu",
+    "exampleSentences": [
+      "Initially, I thought the task would be easy.",
+      "The company was initially small but grew rapidly over the years."
+    ]
+  },
+  {
+    "word": "Constipation",
+    "translation": "Kõhukinnisus",
+    "exampleSentences": [
+      "Eating more fiber can help relieve constipation.",
+      "She visited the doctor due to severe constipation."
+    ]
+  },
+  {
+    "word": "Scrutinize",
+    "translation": "Põhjalikult uurima",
+    "exampleSentences": [
+      "The detective began to scrutinize the evidence closely.",
+      "Please scrutinize the report before the meeting."
+    ]
+  },
+  {
+    "word": "Predominantly",
+    "translation": "Valdavalt",
+    "exampleSentences": [
+      "The neighborhood is predominantly residential.",
+      "Her wardrobe is predominantly black and white."
+    ]
+  },
+  {
+    "word": "Subsequent",
+    "translation": "Järgnev",
+    "exampleSentences": [
+      "The first event was a success, but subsequent ones were less attended.",
+      "Subsequent studies confirmed the initial findings."
+    ]
+  },
+  {
+    "word": "Erroneously",
+    "translation": "Ekslikult",
+    "exampleSentences": [
+      "He was erroneously identified as the suspect.",
+      "The document was erroneously filed under the wrong category."
+    ]
+  },
+  {
+    "word": "Vigilant",
+    "translation": "Valvas",
+    "exampleSentences": [
+      "Security personnel need to remain vigilant at all times.",
+      "We must be vigilant against any potential threats."
+    ]
+  },
+  {
+    "word": "Endeavours",
+    "translation": "Püüdlused",
+    "exampleSentences": [
+      "She is known for her philanthropic endeavours.",
+      "Good luck in your future endeavours!"
+    ]
+  },
+  {
+    "word": "Recreational",
+    "translation": "Vabaaja",
+    "exampleSentences": [
+      "The city offers many recreational facilities.",
+      "He bought a boat for recreational fishing."
+    ]
+  },
+  {
+    "word": "Implicit",
+    "translation": "Kaudne",
+    "exampleSentences": [
+      "There was an implicit understanding between the two parties.",
+      "Her actions showed implicit trust in their abilities."
+    ]
+  },
+  {
+    "word": "Plague",
+    "translation": "Katk",
+    "exampleSentences": [
+      "The bubonic plague spread rapidly throughout Europe.",
+      "Locusts continue to plague farmers in the region."
+    ]
+  },
+  {
+    "word": "Extinction",
+    "translation": "Väljasuremine",
+    "exampleSentences": [
+      "Many species are threatened with extinction due to habitat loss.",
+      "Conservation efforts aim to prevent the extinction of endangered animals."
+    ]
+  },
+  {
+    "word": "Impaling",
+    "translation": "Läbistamine",
+    "exampleSentences": [
+      "The warrior used a spear for impaling his enemies.",
+      "Be careful with that sharp stick to avoid impaling yourself."
+    ]
+  },
+  {
+    "word": "Perception",
+    "translation": "Taju",
+    "exampleSentences": [
+      "Her perception of the event was different from mine.",
+      "Optical illusions can trick our perception."
+    ]
+  },
+  {
+    "word": "Promiscuous",
+    "translation": "Labiilne",
+    "exampleSentences": [
+      "The novel explores the life of a promiscuous artist.",
+      "They criticized the advertisement for promoting a promiscuous lifestyle."
+    ]
+  },
+  {
+    "word": "Petrify",
+    "translation": "Kivistuma",
+    "exampleSentences": [
+      "She was petrified with fear upon seeing the spider.",
+      "Over centuries, the wood began to petrify."
+    ]
+  },
+  {
+    "word": "Leisure",
+    "translation": "Vaba aeg",
+    "exampleSentences": [
+      "In his leisure time, he enjoys painting.",
+      "She reads novels at her leisure."
+    ]
+  },
+  {
+    "word": "Diverse",
+    "translation": "Mitmekesine",
+    "exampleSentences": [
+      "The university has a diverse student population.",
+      "They offer a diverse range of services."
+    ]
+  },
+  {
+    "word": "Shin",
+    "translation": "Säär",
+    "exampleSentences": [
+      "He bruised his shin while hiking.",
+      "Shin guards are important in soccer to protect the legs."
+    ]
+  },
+  {
+    "word": "Humility",
+    "translation": "Alandlikkus",
+    "exampleSentences": [
+      "Her humility is one of her greatest strengths.",
+      "He accepted the award with humility."
+    ]
+  },
+  {
+    "word": "Anticipated",
+    "translation": "Oodatav",
+    "exampleSentences": [
+      "The anticipated release date is next month.",
+      "They eagerly anticipated the arrival of their guests."
+    ]
+  },
+  {
+    "word": "Evolve",
+    "translation": "Arenema",
+    "exampleSentences": [
+      "Businesses need to evolve to stay competitive.",
+      "Scientists study how species evolve over time."
+    ]
+  },
+  {
+    "word": "Alignment",
+    "translation": "Joondus",
+    "exampleSentences": [
+      "Proper alignment of the wheels is essential for safety.",
+      "Their values are in alignment with ours."
+    ]
+  },
+  {
+    "word": "Peasant",
+    "translation": "Talupoeg",
+    "exampleSentences": [
+      "The peasants worked hard in the fields.",
+      "Medieval peasants had a difficult life."
+    ]
+  },
+  {
+    "word": "Prevails",
+    "translation": "Valitseb",
+    "exampleSentences": [
+      "Truth always prevails in the end.",
+      "Silence prevails in the library during exams."
+    ]
+  },
+  {
+    "word": "Incoherent",
+    "translation": "Segane",
+    "exampleSentences": [
+      "After the accident, he was incoherent and confused.",
+      "The essay was incoherent and difficult to follow."
+    ]
+  },
+  {
+    "word": "Contemporary",
+    "translation": "Kaasaegne",
+    "exampleSentences": [
+      "She prefers contemporary art over classical.",
+      "They live in a contemporary style home."
+    ]
+  },
+  {
+    "word": "Unvetted",
+    "translation": "Kontrollimata",
+    "exampleSentences": [
+      "Sharing unvetted information can lead to rumors.",
+      "The unvetted candidates need background checks."
+    ]
+  },
+  {
+    "word": "Cynicism",
+    "translation": "Küünilisus",
+    "exampleSentences": [
+      "His cynicism prevents him from trusting others.",
+      "The movie portrays a society filled with cynicism."
+    ]
+  },
+  {
+    "word": "Conscience",
+    "translation": "Südametunnistus",
+    "exampleSentences": [
+      "He couldn't ignore his conscience any longer.",
+      "She made the decision with a clear conscience."
+    ]
+  },
+  {
+    "word": "Audacious",
+    "translation": "Julge",
+    "exampleSentences": [
+      "Her audacious plan surprised everyone.",
+      "He made an audacious move during the chess game."
+    ]
+  },
+  {
+    "word": "Incentives",
+    "translation": "Stiimulid",
+    "exampleSentences": [
+      "The company offers financial incentives to top performers.",
+      "Tax incentives are provided for renewable energy investments."
+    ]
+  },
+  {
+    "word": "Perishable",
+    "translation": "Kiiresti riknev",
+    "exampleSentences": [
+      "Store perishable foods in the refrigerator.",
+      "They transported perishable goods in refrigerated trucks."
+    ]
+  },
+  {
+    "word": "Inaction",
+    "translation": "Tegevusetus",
+    "exampleSentences": [
+      "Their inaction led to missed opportunities.",
+      "The problem worsened due to government inaction."
+    ]
+  },
+  {
+    "word": "Insidious",
+    "translation": "Salakaval",
+    "exampleSentences": [
+      "Cancer can be an insidious disease.",
+      "They launched an insidious campaign against their rivals."
+    ]
+  },
+  {
+    "word": "Emergent",
+    "translation": "Esilekerkiv",
+    "exampleSentences": [
+      "They are leaders in emergent technologies.",
+      "An emergent issue requires immediate attention."
+    ]
+  },
+  {
+    "word": "Compounding",
+    "translation": "Liitmine",
+    "exampleSentences": [
+      "Interest is compounding daily on this account.",
+      "His mistakes kept compounding the problem."
+    ]
+  },
+  {
+    "word": "Bowel",
+    "translation": "Soolestik",
+    "exampleSentences":
+    [
+      "He was diagnosed with a bowel obstruction.",
+      "A healthy diet can promote good bowel function."
+    ]
+  },
+  {
+    "word": "Preserve",
+    "translation": "Säilitama",
+    "exampleSentences": [
+      "We need to preserve our cultural heritage.",
+      "The jar is used to preserve jam."
+    ]
+  },
+  {
+    "word": "Entity",
+    "translation": "Üksus",
+    "exampleSentences": [
+      "The two departments merged into a single entity.",
+      "A corporation is a legal entity."
+    ]
+  },
+  {
+    "word": "Stumble",
+    "translation": "Komistama",
+    "exampleSentences": [
+      "He stumbled over a tree root.",
+      "She might stumble if the path isn't clear."
+    ]
+  },
+  {
+    "word": "Vague",
+    "translation": "Ebamäärane",
+    "exampleSentences": [
+      "Her answer was vague and unhelpful.",
+      "I have a vague memory of meeting him before."
+    ]
+  },
+  {
+    "word": "Relentless",
+    "translation": "Järeleandmatu",
+    "exampleSentences": [
+      "They faced the relentless heat of the desert.",
+      "Her relentless pursuit of excellence inspired many."
+    ]
+  },
+  {
+    "word": "Dilute",
+    "translation": "Lahjendama",
+    "exampleSentences": [
+      "You need to dilute the concentrate with water.",
+      "Adding ice will dilute the flavor."
+    ]
+  },
+  {
+    "word": "Saturation",
+    "translation": "Küllastus",
+    "exampleSentences": [
+      "The saturation of the market led to decreased sales.",
+      "Adjust the color saturation for better image quality."
+    ]
+  },
+  {
+    "word": "Incrementally",
+    "translation": "Järk-järgult",
+    "exampleSentences": [
+      "They plan to increase prices incrementally.",
+      "Her responsibilities grew incrementally over time."
+    ]
+  }
 ]
