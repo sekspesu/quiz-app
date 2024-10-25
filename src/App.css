@@ -111,9 +111,10 @@ form button:hover {
 .quiz-section input[type="text"] {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 15px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 16px;
 }
 
 .quiz-section button {
@@ -212,7 +213,7 @@ button.start-quiz:hover {
   border: none;
   border-radius: 6px; /* Match border-radius */
   cursor: pointer;
-  font-size: 14px; /* Match font size */
+  font-size: 16px; /* Match font size */
   font-weight: 500;
   transition: all 0.2s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
