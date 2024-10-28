@@ -2,378 +2,487 @@
   {
     "word": "Exquisite",
     "translation": "Peen",
+    "synonyms": ["Elegant", "Delicate", "Refined"],
     "exampleSentences": [
-      "The chef prepared an exquisite meal that delighted all the guests.",
-      "She wore an exquisite dress made of silk."
+      "The artisan crafted an exquisite piece of jewelry.",
+      "We enjoyed an exquisite meal at the new restaurant."
     ]
   },
   {
     "word": "Initially",
     "translation": "Esialgu",
+    "synonyms": ["At first", "Originally", "Firstly"],
     "exampleSentences": [
-      "Initially, I thought the task would be easy.",
-      "The company was initially small but grew rapidly over the years."
+      "Initially, she was hesitant to join the team.",
+      "They planned to travel by train initially."
     ]
   },
   {
     "word": "Constipation",
     "translation": "Kõhukinnisus",
+    "synonyms": ["Irregularity", "Obstruction", "Blockage"],
     "exampleSentences": [
-      "Eating more fiber can help relieve constipation.",
-      "She visited the doctor due to severe constipation."
+      "He suffered from constipation after changing his diet.",
+      "Drinking more water can help relieve constipation."
     ]
   },
   {
-    "word": "Scrutinize",
-    "translation": "Põhjalikult uurima",
+    "word": "Cramp",
+    "translation": "Kramp",
+    "synonyms": ["Spasm", "Contraction", "Tightening"],
     "exampleSentences": [
-      "The detective began to scrutinize the evidence closely.",
-      "Please scrutinize the report before the meeting."
+      "She got a cramp in her leg while swimming.",
+      "Dehydration can lead to muscle cramps."
     ]
   },
   {
-    "word": "Predominantly",
-    "translation": "Valdavalt",
+    "word": "Excessive",
+    "translation": "Liigne",
+    "synonyms": ["Extreme", "Immoderate", "Overabundant"],
     "exampleSentences": [
-      "The neighborhood is predominantly residential.",
-      "Her wardrobe is predominantly black and white."
+      "Excessive noise can damage your hearing.",
+      "He was criticized for his excessive spending."
     ]
   },
   {
-    "word": "Subsequent",
-    "translation": "Järgnev",
+    "word": "Afford",
+    "translation": "Lubama endale",
+    "synonyms": ["Manage", "Bear", "Sustain"],
     "exampleSentences": [
-      "The first event was a success, but subsequent ones were less attended.",
-      "Subsequent studies confirmed the initial findings."
+      "I can't afford to buy a new car right now.",
+      "They can afford to take a vacation this year."
     ]
   },
   {
-    "word": "Erroneously",
-    "translation": "Ekslikult",
+    "word": "Fasting",
+    "translation": "Paastumine",
+    "synonyms": ["Abstinence", "Starvation", "Dieting"],
     "exampleSentences": [
-      "He was erroneously identified as the suspect.",
-      "The document was erroneously filed under the wrong category."
+      "Fasting is common in many religions.",
+      "Intermittent fasting has become a popular health trend."
     ]
   },
   {
-    "word": "Vigilant",
-    "translation": "Valvas",
+    "word": "Feast",
+    "translation": "Pidusöök",
+    "synonyms": ["Banquet", "Celebration", "Gala"],
     "exampleSentences": [
-      "Security personnel need to remain vigilant at all times.",
-      "We must be vigilant against any potential threats."
+      "They prepared a feast for the wedding guests.",
+      "The harvest festival included a grand feast."
     ]
   },
   {
-    "word": "Endeavours",
-    "translation": "Püüdlused",
+    "word": "Gather",
+    "translation": "Koguma",
+    "synonyms": ["Collect", "Assemble", "Accumulate"],
     "exampleSentences": [
-      "She is known for her philanthropic endeavours.",
-      "Good luck in your future endeavours!"
+      "We need to gather more information before deciding.",
+      "They gather every summer for a family reunion."
     ]
   },
   {
-    "word": "Recreational",
-    "translation": "Vabaaja",
+    "word": "Beverage",
+    "translation": "Jook",
+    "synonyms": ["Drink", "Refreshment", "Liquid"],
     "exampleSentences": [
-      "The city offers many recreational facilities.",
-      "He bought a boat for recreational fishing."
+      "Would you like a beverage with your meal?",
+      "They serve a variety of hot and cold beverages."
     ]
   },
   {
-    "word": "Implicit",
-    "translation": "Kaudne",
+    "word": "Consider",
+    "translation": "Mõtlema",
+    "synonyms": ["Contemplate", "Ponder", "Reflect"],
     "exampleSentences": [
-      "There was an implicit understanding between the two parties.",
-      "Her actions showed implicit trust in their abilities."
+      "Please consider my proposal carefully.",
+      "They are considering moving to a new city."
     ]
   },
   {
-    "word": "Plague",
-    "translation": "Katk",
+    "word": "Considerate",
+    "translation": "Arvestav",
+    "synonyms": ["Thoughtful", "Kind", "Attentive"],
     "exampleSentences": [
-      "The bubonic plague spread rapidly throughout Europe.",
-      "Locusts continue to plague farmers in the region."
+      "She is always considerate of others' feelings.",
+      "It's considerate to hold the door open."
     ]
   },
   {
-    "word": "Extinction",
-    "translation": "Väljasuremine",
+    "word": "Delicious",
+    "translation": "Maitsev",
+    "synonyms": ["Tasty", "Flavorful", "Delectable"],
     "exampleSentences": [
-      "Many species are threatened with extinction due to habitat loss.",
-      "Conservation efforts aim to prevent the extinction of endangered animals."
+      "The cake you baked is absolutely delicious.",
+      "They serve delicious food at that restaurant."
     ]
   },
   {
-    "word": "Impaling",
-    "translation": "Läbistamine",
+    "word": "Appearance",
+    "translation": "Välimus",
+    "synonyms": ["Look", "Aspect", "Image"],
     "exampleSentences": [
-      "The warrior used a spear for impaling his enemies.",
-      "Be careful with that sharp stick to avoid impaling yourself."
+      "She made an appearance at the event.",
+      "His appearance has changed over the years."
     ]
   },
   {
-    "word": "Perception",
-    "translation": "Taju",
+    "word": "Expose",
+    "translation": "Paljastama",
+    "synonyms": ["Reveal", "Uncover", "Disclose"],
     "exampleSentences": [
-      "Her perception of the event was different from mine.",
-      "Optical illusions can trick our perception."
+      "The investigation exposed the corruption.",
+      "Don't expose the film to light."
     ]
   },
   {
-    "word": "Promiscuous",
-    "translation": "Labiilne",
+    "word": "Involved",
+    "translation": "Kaasa haaratud",
+    "synonyms": ["Engaged", "Connected", "Committed"],
     "exampleSentences": [
-      "The novel explores the life of a promiscuous artist.",
-      "They criticized the advertisement for promoting a promiscuous lifestyle."
+      "He is involved in several community projects.",
+      "They got involved in a heated debate."
     ]
   },
   {
-    "word": "Petrify",
-    "translation": "Kivistuma",
+    "word": "Confident",
+    "translation": "Enesekindel",
+    "synonyms": ["Self-assured", "Bold", "Certain"],
     "exampleSentences": [
-      "She was petrified with fear upon seeing the spider.",
-      "Over centuries, the wood began to petrify."
+      "She is confident about her decision.",
+      "He gave a confident presentation."
     ]
   },
   {
-    "word": "Leisure",
-    "translation": "Vaba aeg",
+    "word": "Consistent",
+    "translation": "Järjepidev",
+    "synonyms": ["Steady", "Uniform", "Unchanging"],
     "exampleSentences": [
-      "In his leisure time, he enjoys painting.",
-      "She reads novels at her leisure."
+      "Her work is always consistent in quality.",
+      "You need to be consistent to see results."
     ]
   },
   {
-    "word": "Diverse",
-    "translation": "Mitmekesine",
+    "word": "Irritated",
+    "translation": "Ärritunud",
+    "synonyms": ["Annoyed", "Aggravated", "Frustrated"],
     "exampleSentences": [
-      "The university has a diverse student population.",
-      "They offer a diverse range of services."
+      "He was irritated by the constant noise.",
+      "She became irritated when her plans changed."
     ]
   },
   {
-    "word": "Shin",
-    "translation": "Säär",
+    "word": "Approach",
+    "translation": "Lähenemine",
+    "synonyms": ["Method", "Strategy", "Procedure"],
     "exampleSentences": [
-      "He bruised his shin while hiking.",
-      "Shin guards are important in soccer to protect the legs."
+      "We need a new approach to solve this problem.",
+      "She took a cautious approach to the issue."
     ]
   },
   {
-    "word": "Humility",
-    "translation": "Alandlikkus",
+    "word": "Appreciate",
+    "translation": "Hindama",
+    "synonyms": ["Value", "Respect", "Admire"],
     "exampleSentences": [
-      "Her humility is one of her greatest strengths.",
-      "He accepted the award with humility."
+      "I really appreciate your help.",
+      "They appreciate fine art."
     ]
   },
   {
-    "word": "Anticipated",
-    "translation": "Oodatav",
+    "word": "Appropriate",
+    "translation": "Sobiv",
+    "synonyms": ["Suitable", "Proper", "Fitting"],
     "exampleSentences": [
-      "The anticipated release date is next month.",
-      "They eagerly anticipated the arrival of their guests."
+      "Wear appropriate attire for the interview.",
+      "Is this movie appropriate for children?"
     ]
   },
   {
-    "word": "Evolve",
-    "translation": "Arenema",
+    "word": "Assignment",
+    "translation": "Ülesanne",
+    "synonyms": ["Task", "Duty", "Job"],
     "exampleSentences": [
-      "Businesses need to evolve to stay competitive.",
-      "Scientists study how species evolve over time."
+      "The assignment is due tomorrow.",
+      "He completed the assignment ahead of time."
     ]
   },
   {
-    "word": "Alignment",
-    "translation": "Joondus",
+    "word": "Awareness",
+    "translation": "Teadlikkus",
+    "synonyms": ["Consciousness", "Perception", "Understanding"],
     "exampleSentences": [
-      "Proper alignment of the wheels is essential for safety.",
-      "Their values are in alignment with ours."
+      "Public awareness of the issue is growing.",
+      "Meditation can enhance self-awareness."
     ]
   },
   {
-    "word": "Peasant",
-    "translation": "Talupoeg",
+    "word": "Behavior",
+    "translation": "Käitumine",
+    "synonyms": ["Conduct", "Manners", "Actions"],
     "exampleSentences": [
-      "The peasants worked hard in the fields.",
-      "Medieval peasants had a difficult life."
+      "His behavior was unacceptable.",
+      "They are studying animal behavior."
     ]
   },
   {
-    "word": "Prevails",
-    "translation": "Valitseb",
+    "word": "Beneficial",
+    "translation": "Kasulik",
+    "synonyms": ["Advantageous", "Helpful", "Favorable"],
     "exampleSentences": [
-      "Truth always prevails in the end.",
-      "Silence prevails in the library during exams."
+      "Regular exercise is beneficial to health.",
+      "The merger was beneficial for both companies."
     ]
   },
   {
-    "word": "Incoherent",
-    "translation": "Segane",
+    "word": "Competent",
+    "translation": "Pädev",
+    "synonyms": ["Capable", "Skilled", "Proficient"],
     "exampleSentences": [
-      "After the accident, he was incoherent and confused.",
-      "The essay was incoherent and difficult to follow."
+      "She is a competent engineer.",
+      "We need a competent person for this job."
     ]
   },
   {
-    "word": "Contemporary",
-    "translation": "Kaasaegne",
+    "word": "Comprehension",
+    "translation": "Mõistmine",
+    "synonyms": ["Understanding", "Grasp", "Insight"],
     "exampleSentences": [
-      "She prefers contemporary art over classical.",
-      "They live in a contemporary style home."
+      "Reading improves comprehension skills.",
+      "He has good listening comprehension."
     ]
   },
   {
-    "word": "Unvetted",
-    "translation": "Kontrollimata",
+    "word": "Concerned",
+    "translation": "Mures",
+    "synonyms": ["Worried", "Anxious", "Apprehensive"],
     "exampleSentences": [
-      "Sharing unvetted information can lead to rumors.",
-      "The unvetted candidates need background checks."
+      "She is concerned about the environment.",
+      "They are concerned for his safety."
     ]
   },
   {
-    "word": "Cynicism",
-    "translation": "Küünilisus",
+    "word": "Conclusion",
+    "translation": "Järeldus",
+    "synonyms": ["Result", "Ending", "Outcome"],
     "exampleSentences": [
-      "His cynicism prevents him from trusting others.",
-      "The movie portrays a society filled with cynicism."
+      "The study's conclusion was surprising.",
+      "In conclusion, we should proceed carefully."
     ]
   },
   {
-    "word": "Conscience",
-    "translation": "Südametunnistus",
+    "word": "Conduct",
+    "translation": "Läbiviima",
+    "synonyms": ["Carry out", "Perform", "Manage"],
     "exampleSentences": [
-      "He couldn't ignore his conscience any longer.",
-      "She made the decision with a clear conscience."
+      "They will conduct an experiment.",
+      "He conducted the meeting efficiently."
     ]
   },
   {
-    "word": "Audacious",
-    "translation": "Julge",
+    "word": "Consequences",
+    "translation": "Tagajärjed",
+    "synonyms": ["Results", "Outcomes", "Effects"],
     "exampleSentences": [
-      "Her audacious plan surprised everyone.",
-      "He made an audacious move during the chess game."
+      "Consider the consequences before acting.",
+      "His actions led to serious consequences."
     ]
   },
   {
-    "word": "Incentives",
-    "translation": "Stiimulid",
+    "word": "Consistency",
+    "translation": "Järjepidevus",
+    "synonyms": ["Uniformity", "Stability", "Regularity"],
     "exampleSentences": [
-      "The company offers financial incentives to top performers.",
-      "Tax incentives are provided for renewable energy investments."
+      "Consistency is key to success.",
+      "The recipe requires a thick consistency."
     ]
   },
   {
-    "word": "Perishable",
-    "translation": "Kiiresti riknev",
+    "word": "Constructive",
+    "translation": "Konstruktiivne",
+    "synonyms": ["Helpful", "Productive", "Positive"],
     "exampleSentences": [
-      "Store perishable foods in the refrigerator.",
-      "They transported perishable goods in refrigerated trucks."
+      "She offered constructive criticism.",
+      "Let's have a constructive discussion."
     ]
   },
   {
-    "word": "Inaction",
-    "translation": "Tegevusetus",
+    "word": "Continuous",
+    "translation": "Pidev",
+    "synonyms": ["Ongoing", "Uninterrupted", "Constant"],
     "exampleSentences": [
-      "Their inaction led to missed opportunities.",
-      "The problem worsened due to government inaction."
+      "The machine runs in a continuous loop.",
+      "We heard continuous noise all night."
     ]
   },
   {
-    "word": "Insidious",
-    "translation": "Salakaval",
+    "word": "Contribute",
+    "translation": "Panustama",
+    "synonyms": ["Donate", "Provide", "Add"],
     "exampleSentences": [
-      "Cancer can be an insidious disease.",
-      "They launched an insidious campaign against their rivals."
+      "Everyone can contribute to the project.",
+      "She contributes articles to the magazine."
     ]
   },
   {
-    "word": "Emergent",
-    "translation": "Esilekerkiv",
+    "word": "Convenient",
+    "translation": "Mugav",
+    "synonyms": ["Handy", "Suitable", "Accessible"],
     "exampleSentences": [
-      "They are leaders in emergent technologies.",
-      "An emergent issue requires immediate attention."
+      "This time is convenient for me.",
+      "Online shopping is very convenient."
     ]
   },
   {
-    "word": "Compounding",
-    "translation": "Liitmine",
+    "word": "Convince",
+    "translation": "Veenduma",
+    "synonyms": ["Persuade", "Assure", "Influence"],
     "exampleSentences": [
-      "Interest is compounding daily on this account.",
-      "His mistakes kept compounding the problem."
+      "He convinced me to join the team.",
+      "They need to convince the board members."
     ]
   },
   {
-    "word": "Bowel",
-    "translation": "Soolestik",
-    "exampleSentences":
-    [
-      "He was diagnosed with a bowel obstruction.",
-      "A healthy diet can promote good bowel function."
+    "word": "Coordination",
+    "translation": "Koordinatsioon",
+    "synonyms": ["Organization", "Collaboration", "Synchronization"],
+    "exampleSentences": [
+      "The event requires careful coordination.",
+      "She has good hand-eye coordination."
     ]
   },
   {
-    "word": "Preserve",
-    "translation": "Säilitama",
+    "word": "Core",
+    "translation": "Südamik",
+    "synonyms": ["Center", "Essence", "Nucleus"],
     "exampleSentences": [
-      "We need to preserve our cultural heritage.",
-      "The jar is used to preserve jam."
+      "The core of the problem is lack of funding.",
+      "Exercise to strengthen your core muscles."
     ]
   },
   {
-    "word": "Entity",
-    "translation": "Üksus",
+    "word": "Courage",
+    "translation": "Julgeolek",
+    "synonyms": ["Bravery", "Valor", "Fortitude"],
     "exampleSentences": [
-      "The two departments merged into a single entity.",
-      "A corporation is a legal entity."
+      "She showed courage during the crisis.",
+      "It takes courage to speak the truth."
     ]
   },
   {
-    "word": "Stumble",
-    "translation": "Komistama",
+    "word": "Course",
+    "translation": "Kursus",
+    "synonyms": ["Class", "Program", "Curriculum"],
     "exampleSentences": [
-      "He stumbled over a tree root.",
-      "She might stumble if the path isn't clear."
+      "He enrolled in a coding course.",
+      "The ship changed its course."
     ]
   },
   {
-    "word": "Vague",
-    "translation": "Ebamäärane",
+    "word": "Curious",
+    "translation": "Uudishimulik",
+    "synonyms": ["Inquisitive", "Interested", "Inquiring"],
     "exampleSentences": [
-      "Her answer was vague and unhelpful.",
-      "I have a vague memory of meeting him before."
+      "Children are naturally curious.",
+      "I'm curious about how it works."
     ]
   },
   {
-    "word": "Relentless",
-    "translation": "Järeleandmatu",
+    "word": "Decade",
+    "translation": "Aastakümme",
+    "synonyms": ["Ten years", "Decennium"],
     "exampleSentences": [
-      "They faced the relentless heat of the desert.",
-      "Her relentless pursuit of excellence inspired many."
+      "A lot has changed in the past decade.",
+      "They celebrated a decade of success."
     ]
   },
   {
-    "word": "Dilute",
-    "translation": "Lahjendama",
+    "word": "Decision",
+    "translation": "Otsus",
+    "synonyms": ["Choice", "Resolution", "Determination"],
     "exampleSentences": [
-      "You need to dilute the concentrate with water.",
-      "Adding ice will dilute the flavor."
+      "It's a difficult decision to make.",
+      "They announced their decision yesterday."
     ]
   },
   {
-    "word": "Saturation",
-    "translation": "Küllastus",
+    "word": "Defensive",
+    "translation": "Kaitseseisev",
+    "synonyms": ["Protective", "Guarded", "Reactive"],
     "exampleSentences": [
-      "The saturation of the market led to decreased sales.",
-      "Adjust the color saturation for better image quality."
+      "He took a defensive stance.",
+      "She became defensive when questioned."
     ]
   },
   {
-    "word": "Incrementally",
-    "translation": "Järk-järgult",
+    "word": "Demand",
+    "translation": "Nõudma",
+    "synonyms": ["Require", "Request", "Insist"],
     "exampleSentences": [
-      "They plan to increase prices incrementally.",
-      "Her responsibilities grew incrementally over time."
+      "The job demands a lot of time.",
+      "They demand an explanation."
+    ]
+  },
+  {
+    "word": "Demonstrate",
+    "translation": "Demonstreerima",
+    "synonyms": ["Show", "Exhibit", "Illustrate"],
+    "exampleSentences": [
+      "He will demonstrate how the device works.",
+      "They demonstrated their skills."
+    ]
+  },
+  {
+    "word": "Depressed",
+    "translation": "Masendunud",
+    "synonyms": ["Sad", "Downcast", "Despondent"],
+    "exampleSentences": [
+      "She felt depressed after the loss.",
+      "The gloomy weather made him depressed."
+    ]
+  },
+  {
+    "word": "Determine",
+    "translation": "Määrama",
+    "synonyms": ["Decide", "Ascertain", "Establish"],
+    "exampleSentences": [
+      "We need to determine the cause.",
+      "They determined the best course of action."
+    ]
+  },
+  {
+    "word": "Develop",
+    "translation": "Arendama",
+    "synonyms": ["Grow", "Expand", "Advance"],
+    "exampleSentences": [
+      "She wants to develop her skills.",
+      "The company plans to develop new products."
+    ]
+  },
+  {
+    "word": "Disappointed",
+    "translation": "Pettunud",
+    "synonyms": ["Let down", "Dissatisfied", "Discouraged"],
+    "exampleSentences": [
+      "He was disappointed with the results.",
+      "Don't be disappointed if it doesn't work."
+    ]
+  },
+  {
+    "word": "Discipline",
+    "translation": "Distsipliin",
+    "synonyms": ["Control", "Order", "Regulation"],
+    "exampleSentences": [
+      "Self-discipline is important for success.",
+      "The coach emphasized discipline."
+    ]
+  },
+  {
+    "word": "Discuss",
+    "translation": "Arutama",
+    "synonyms": ["Talk about", "Debate", "Deliberate"],
+    "exampleSentences": [
+      "Let's discuss your plans.",
+      "They discussed the proposal in detail."
     ]
   }
 ]

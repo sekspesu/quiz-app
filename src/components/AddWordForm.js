@@ -1,65 +1,56 @@
 // src/components/AddWordForm.js
 
 import React, { useState } from 'react';
-import axios from 'axios';
 
 function AddWordForm({ onAddWord }) {
-  const [showForm, setShowForm] = useState(false);
   const [word, setWord] = useState('');
   const [translation, setTranslation] = useState('');
 
-  const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:5000').trim();
-
-  // Toggle form visibility
-  const handleToggleForm = () => {
-    setShowForm(!showForm);
-  };
-
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (word.trim() && translation.trim()) {
-      const newWord = { word: word.trim(), translation: translation.trim() };
-      axios.post(`${API_URL}/api/words`, newWord)
-        .then(response => {
-          onAddWord(response.data);
-          setWord('');
-          setTranslation('');
-          setShowForm(false); // Hide form after submission
-        })
-        .catch(error => {
-          console.error('There was an error adding the word!', error);
-        });
-    }
+
+    // Prepare the new word object
+    const newWord = {
+      word: word.trim(),
+      translation: translation.trim(),
+    };
+
+    // Call the onAddWord function passed from the parent component
+    onAddWord(newWord);
+
+    // Clear the form
+    setWord('');
+    setTranslation('');
   };
 
   return (
-    <div className="add-word-section">
-      <button onClick={handleToggleForm} className="add-word-button">
-        {showForm ? 'Cancel' : 'Add Word'}
-      </button>
-
-      {showForm && (
-        <form onSubmit={handleSubmit}>
+    <div className="add-word-form">
+      <h2 className="mb-4">Add a New Word</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label>Word in English:</label>
           <input
             type="text"
-            name="word"
-            placeholder="Word"
+            className="form-control"
             value={word}
             onChange={(e) => setWord(e.target.value)}
             required
           />
+        </div>
+        <div className="form-group">
+          <label>Translation:</label>
           <input
             type="text"
-            name="translation"
-            placeholder="Translation"
+            className="form-control"
             value={translation}
             onChange={(e) => setTranslation(e.target.value)}
             required
           />
-          <button type="submit">Submit</button>
-        </form>
-      )}
+        </div>
+        <button type="submit" className="btn btn-success mt-3">
+          Add Word
+        </button>
+      </form>
     </div>
   );
 }

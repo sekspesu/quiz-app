@@ -3,27 +3,28 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 // Import components
 import AddWordForm from './components/AddWordForm';
 import Quiz from './components/Quiz';
 
-// Import the image if it's in src/assets
-// import headerImage from './assets/header-image.jpg';
-
 function App() {
   const [words, setWords] = useState([]);
+  const [showAddWordForm, setShowAddWordForm] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false); // State for Dark Mode
 
   // Use the API URL from environment variables, with a fallback to 'http://localhost:5000'
   const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:5000').trim();
 
   // Load words from the backend when the app mounts
   useEffect(() => {
-    axios.get(`${API_URL}/api/words`)
-      .then(response => {
+    axios
+      .get(`${API_URL}/api/words`)
+      .then((response) => {
         setWords(response.data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('There was an error fetching the words!', error);
       });
   }, [API_URL]);
@@ -36,33 +37,80 @@ function App() {
   // Function to add a new word to the list
   const handleAddWord = (newWord) => {
     setWords([...words, newWord]);
+    setShowAddWordForm(false); // Hide the form after adding the word
   };
+
+  // Function to toggle the AddWordForm
+  const toggleAddWordForm = () => {
+    setShowAddWordForm(!showAddWordForm);
+  };
+
+  // Function to toggle Dark Mode
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  // Add or remove the 'dark-mode' class on the body element
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [isDarkMode]);
 
   return (
     <div className="App">
-      {/* Header Image */}
-      {/* If image is in src/assets and imported */}
-      {/* <img src={headerImage} alt="Header" className="header-image" /> */}
-
-      {/* If image is in public folder */}
-      <img src={`${process.env.PUBLIC_URL}/header-image.jpg`} alt="Header" className="header-image" />
-
-      {/* Main Title */}
-      <h1>Alder's Learning App</h1>
-
-      {/* Word Count */}
-      <div className="word-count">
-        <p>You have {getWordCount()} words in your database.</p>
+      {/* Dark Mode Toggle Switch */}
+      <div className="toggle-switch">
+        <div className="form-check form-switch">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="darkModeSwitch"
+            checked={isDarkMode}
+            onChange={toggleDarkMode}
+          />
+          <label className="form-check-label" htmlFor="darkModeSwitch">
+            Dark Mode
+          </label>
+        </div>
       </div>
 
-      {/* Add Word Section (moved here) */}
-      <div className="add-word-section">
-        <AddWordForm onAddWord={handleAddWord} />
-      </div>
+      <div className="container"> {/* Bootstrap container */}
+        {/* Header Image */}
+        <img
+          src={`${process.env.PUBLIC_URL}/header-image.jpg`}
+          alt="Header"
+          className="img-fluid header-image"
+        />
 
-      {/* Quiz Section */}
-      <div className="quiz-section">
-        <Quiz words={words} />
+        {/* Main Title */}
+        <h1 className="my-4 text-center">Alder's Learning App</h1>
+
+        {/* Word Count and Add Word Button */}
+        <div className="word-count mb-4 text-center">
+          <p>You have {getWordCount()} words in your database.</p>
+          <p>
+            Feel free to{' '}
+            <button className="btn btn-link p-0" onClick={toggleAddWordForm}>
+              add a word
+            </button>
+            .
+          </p>
+        </div>
+
+        {/* Add Word Section (conditionally rendered) */}
+        {showAddWordForm && (
+          <div className="add-word-section mb-5">
+            <AddWordForm onAddWord={handleAddWord} />
+          </div>
+        )}
+
+        {/* Quiz Section */}
+        <div className="quiz-section">
+          <Quiz words={words} />
+        </div>
       </div>
     </div>
   );

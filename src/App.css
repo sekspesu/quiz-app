@@ -1,266 +1,234 @@
-/* src/App.css */
+/* App.css */
 
 /* General Styles */
-.App {
-  text-align: center;
-  margin: 20px;
+body {
   font-family: Arial, sans-serif;
-}
-
-/* Header Styles */
-.App h1 {
-  color: #333;
-  margin-bottom: 30px;
-}
-
-/* Form Styles */
-form {
-  margin: 20px auto;
-  max-width: 400px;
-}
-
-form h2 {
-  margin-bottom: 9px;
-}
-
-form button {
-  margin-right: 20px; /* Adds spacing between buttons */
-}
-form button:last-child {
-  margin-right: 15px; /* Removes margin from the last button */
-}
-
-form input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transform: translateY(-2px); /* Add hover animation */
-}
-
-form button:hover {
-  background-color: #0a60c9;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-/* Word List Styles */
-.word-list {
-  margin: 20px auto;
-  max-width: 400px;
-}
-
-.word-list h2 {
-  margin-bottom: 15px;
-}
-
-.word-list ul {
-  list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
-.word-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1px;
-  border-bottom: 1px solid #ddd;
+.App {
+  text-align: center;
+  margin: 20px;
 }
 
-.word-list li:last-child {
-  border-bottom: none;
+/* Header Image */
+.header-image {
+  width: 350px; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto 20px auto;
+  display: block;
 }
 
-.word-list button {
-  background-color: #dc3545;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
+/* Word Count Section */
+.word-count {
+  font-size: 1.2rem;
 }
 
-.word-list button:hover {
-  background-color: #c82333;
-  transform: translateY(-2px);
-}
-
-/* Quiz Section Styles */
-.quiz-section {
-  margin: 20px auto;
-  max-width: 400px;
-}
-
-.quiz-section h2 {
-  margin-bottom: 15px;
-}
-
-.quiz-section p {
-  font-size: 1.1em;
-}
-
-.quiz-section input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin: 15px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.quiz-section button {
-  padding: 10px 15px;
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 5px;
-  transition: background-color 0.3s, transform 0.3s; /* Add transition */
-
-}
-
-.quiz-section button:hover {
-  background-color: #218838;
-  transform: translateY(-2px); /* Add hover animation */
-}
-
-.quiz-section .feedback {
-  margin-top: 10px;
+.word-count .btn-link {
+  color: #007bff;
+  text-decoration: none !important;
   font-weight: bold;
-}
-
-
-/* src/App.css */
-
-/* Keep your existing styles and modify/add these specific button styles */
-
-/* Add Word Button Style */
-form button, 
-input[type="submit"],
-button.add-word {
-  padding: 10px 20px;
-  background-color: #2ECC40; /* Bright green color matching Start Quiz button */
-  color: white;
+  padding: 0;
   border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: none;
 }
 
-form button:hover,
-input[type="submit"]:hover,
-button.add-word:hover {
-  background-color: #29b739;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+.word-count .btn-link:hover {
+  text-decoration: underline;
 }
 
-/* Start Quiz Button Style */
-.quiz-section button,
-button.start-quiz {
-  padding: 12px 24px;
-  background-color: #2ECC40;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.quiz-section button:hover,
-button.start-quiz:hover {
-  background-color: #29b739;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-}
-
-/* Update your existing button overrides */
-.word-list button {
-  background-color: #dc3545;
-  padding: 5px 10px;
-  font-size: 14px;
-}
-
-.word-list button:hover {
-  background-color: #c82333;
-}
-
-/* Add Word Section Styles */
+/* Add Word Section */
 .add-word-section {
   margin-top: 20px;
 }
 
-.add-word-button {
-  padding: 10px 15px;
-  background-color: #3f85be; /* Changed to match Start Quiz green */
-  color: white; /* Changed to white to match Start Quiz */
-  border: none;
-  border-radius: 6px; /* Match border-radius */
-  cursor: pointer;
-  font-size: 16px; /* Match font size */
-  font-weight: 500;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Quiz Section */
+.quiz-section {
+  margin-top: 30px;
 }
 
-.add-word-button:hover {
-  background-color: #296bb7; /* Match hover color */
-  transform: translateY(-1px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+.quiz-section h2 {
+  margin-bottom: 20px;
+  text-align: center; /* Ensure the heading is centered */
 }
 
-/* src/App.css */
-
-/* Hint Styles */
-.hint {
-  background-color: #e9ecef;
-  padding: 10px;
-  border-left: 4px solid #007bff;
+.quiz-word {
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
-.hint h3 {
-  margin-top: 0;
+/* Option Buttons */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hint p {
-  margin: 5px 0;
+.option-button {
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+  padding: 10px;
+  transition: all 0.3s ease;
 }
 
-
-/* Reset Button Styles */
-.reset-button-container {
-  margin-top: 20px;
-  text-align: center;
+.option-button:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-.reset-button-container button {
-  padding: 10px 15px;
-  background-color: #dcb535; /* Red color for the reset button */
+@media (min-width: 576px) {
+  .options-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .option-button {
+    flex: 1 1 calc(33% - 20px); /* Adjusted for 3 options */
+    margin: 5px;
+  }
+}
+
+/* Correct Answer Button */
+.option-button.correct {
+  background-color: #28a745 !important;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  border-color: #28a745;
+  animation: correctAnimation 0.5s ease-in-out;
 }
 
-.reset-button-container button:hover {
-  background-color: #606e6c;
-  transform: translateY(-2px);
+/* Incorrect Answer Button */
+.option-button.incorrect {
+  background-color: #dc3545 !important;
+  color: #fff;
+  border-color: #dc3545;
+  animation: incorrectAnimation 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes correctAnimation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes incorrectAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-10px);
+  }
+  30% {
+    transform: translateX(10px);
+  }
+  45% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  90% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* XP and Rank Display */
+.xp-rank-container {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.xp-rank-container p {
+  margin: 0 0 10px 0;
+}
+
+/* Progress Bar Styles */
+.progress {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  background-color: #28a745;
+  color: #fff;
+}
+
+body.dark-mode .progress-bar {
+  background-color: #bb86fc;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+}
+
+.toggle-switch .form-check-label {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .container,
+body.dark-mode .quiz-section,
+body.dark-mode .add-word-section,
+body.dark-mode .word-count {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode .btn,
+body.dark-mode .btn-link {
+  background-color: #333;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #444;
+}
+
+body.dark-mode .alert {
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+body.dark-mode .option-button.correct {
+  background-color: #388e3c !important;
+  border-color: #388e3c;
+}
+
+body.dark-mode .option-button.incorrect {
+  background-color: #c62828 !important;
+  border-color: #c62828;
 }
