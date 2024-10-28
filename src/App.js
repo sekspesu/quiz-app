@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import components
 import AddWordForm from './components/AddWordForm';
@@ -12,7 +12,8 @@ import Quiz from './components/Quiz';
 function App() {
   const [words, setWords] = useState([]);
   const [showAddWordForm, setShowAddWordForm] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false); // State for Dark Mode
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [quizStarted, setQuizStarted] = useState(false); // New state variable
 
   // Use the API URL from environment variables, with a fallback to 'http://localhost:5000'
   const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:5000').trim();
@@ -77,7 +78,7 @@ function App() {
         </div>
       </div>
 
-      <div className="container"> {/* Bootstrap container */}
+      <div className="container">
         {/* Header Image */}
         <img
           src={`${process.env.PUBLIC_URL}/header-image.jpg`}
@@ -89,16 +90,18 @@ function App() {
         <h1 className="my-4 text-center">Alder's Learning App</h1>
 
         {/* Word Count and Add Word Button */}
-        <div className="word-count mb-4 text-center">
-          <p>You have {getWordCount()} words in your database.</p>
-          <p>
-            Feel free to{' '}
-            <button className="btn btn-link p-0" onClick={toggleAddWordForm}>
-              add a word
-            </button>
-            .
-          </p>
-        </div>
+        {!quizStarted && (
+          <div className="word-count mb-4 text-center">
+            <p>You have {getWordCount()} words in your database.</p>
+            <p>
+              Feel free to{' '}
+              <button className="btn btn-link p-0" onClick={toggleAddWordForm}>
+                add a word
+              </button>
+              .
+            </p>
+          </div>
+        )}
 
         {/* Add Word Section (conditionally rendered) */}
         {showAddWordForm && (
@@ -109,7 +112,11 @@ function App() {
 
         {/* Quiz Section */}
         <div className="quiz-section">
-          <Quiz words={words} />
+          <Quiz
+            words={words}
+            quizStarted={quizStarted}
+            setQuizStarted={setQuizStarted}
+          />
         </div>
       </div>
     </div>

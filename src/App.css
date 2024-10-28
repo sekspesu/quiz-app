@@ -1,28 +1,87 @@
-/* App.css */
+/* App.css - Enhanced version */
 
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  /* Enhanced Animated Background */
+  background: linear-gradient(270deg, #FFDAB9, #FFE5B4, #FFDEAD);
+  background-size: 600% 600%;
+  animation: gradientAnimation 20s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Enhanced Container Styles */
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  animation: containerFadeIn 0.5s ease-out;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+@keyframes containerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .App {
   text-align: center;
   margin: 20px;
+  animation: fadeIn 0.5s ease-out;
 }
 
-/* Header Image */
+/* Enhanced Header Image */
 .header-image {
-  width: 350px; /* Adjust as needed */
+  width: 250px;
   height: auto;
   margin: 0 auto 20px auto;
   display: block;
+  border-radius: 50%;
+  animation: floatAnimation 6s ease-in-out infinite;
 }
 
-/* Word Count Section */
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Enhanced Word Count Section */
 .word-count {
   font-size: 1.2rem;
+  animation: slideUp 0.5s ease-out;
+}
+
+.word-count p {
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
 }
 
 .word-count .btn-link {
@@ -32,203 +91,88 @@ body {
   padding: 0;
   border: none;
   background: none;
-}
-
-.word-count .btn-link:hover {
-  text-decoration: underline;
-}
-
-/* Add Word Section */
-.add-word-section {
-  margin-top: 20px;
-}
-
-/* Quiz Section */
-.quiz-section {
-  margin-top: 30px;
-}
-
-.quiz-section h2 {
-  margin-bottom: 20px;
-  text-align: center; /* Ensure the heading is centered */
-}
-
-.quiz-word {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
-/* Option Buttons */
-.options-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.option-button {
-  width: 100%;
-  max-width: 300px;
-  font-size: 1rem;
-  padding: 10px;
   transition: all 0.3s ease;
+  position: relative;
 }
 
-.option-button:not(:last-child) {
-  margin-bottom: 10px;
+.word-count .btn-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
-@media (min-width: 576px) {
-  .options-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .option-button {
-    flex: 1 1 calc(33% - 20px); /* Adjusted for 3 options */
-    margin: 5px;
-  }
+.word-count .btn-link:hover:after {
+  transform: scaleX(1);
 }
 
-/* Correct Answer Button */
-.option-button.correct {
-  background-color: #28a745 !important;
-  color: #fff;
-  border-color: #28a745;
-  animation: correctAnimation 0.5s ease-in-out;
+/* Enhanced Start Quiz Button */
+.btn-start-quiz {
+  background: linear-gradient(45deg, #FF7F50, #FF6347);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 127, 80, 0.3);
+  animation: pulseAnimation 2s infinite;
 }
 
-/* Incorrect Answer Button */
-.option-button.incorrect {
-  background-color: #dc3545 !important;
-  color: #fff;
-  border-color: #dc3545;
-  animation: incorrectAnimation 0.5s ease-in-out;
+.btn-start-quiz:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 127, 80, 0.4);
+  background: linear-gradient(45deg, #FF6347, #FF4500);
 }
 
-/* Animations */
-@keyframes correctAnimation {
+@keyframes pulseAnimation {
   0% {
     transform: scale(1);
-  }
-  25% {
-    transform: scale(1.1);
   }
   50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
   }
 }
 
-@keyframes incorrectAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  15% {
-    transform: translateX(-10px);
-  }
-  30% {
-    transform: translateX(10px);
-  }
-  45% {
-    transform: translateX(-10px);
-  }
-  60% {
-    transform: translateX(10px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-  90% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* XP and Rank Display */
-.xp-rank-container {
-  text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.xp-rank-container p {
-  margin: 0 0 10px 0;
-}
-
-/* Progress Bar Styles */
-.progress {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.progress-bar {
-  background-color: #28a745;
-  color: #fff;
-}
-
-body.dark-mode .progress-bar {
-  background-color: #bb86fc;
-}
-
-/* Toggle Switch */
-.toggle-switch {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 1000;
-}
-
-.toggle-switch .form-check-label {
-  cursor: pointer;
-  user-select: none;
-}
-
-/* Dark Mode Styles */
+/* Dark Mode Enhancements */
 body.dark-mode {
-  background-color: #121212;
+  background: linear-gradient(270deg, #4B2C20, #2F1B0F, #59392D);
+  background-size: 600% 600%;
   color: #f0f0f0;
 }
 
-body.dark-mode .container,
-body.dark-mode .quiz-section,
-body.dark-mode .add-word-section,
-body.dark-mode .word-count {
-  background-color: #1e1e1e;
+body.dark-mode .container {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-body.dark-mode input,
-body.dark-mode textarea,
-body.dark-mode .btn,
-body.dark-mode .btn-link {
-  background-color: #333;
-  color: #f0f0f0;
-  border-color: #444;
+/* Add these new animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-body.dark-mode .btn:hover {
-  background-color: #444;
-}
-
-body.dark-mode .alert {
-  background-color: #2e2e2e;
-  color: #f0f0f0;
-  border-color: #444;
-}
-
-body.dark-mode .option-button.correct {
-  background-color: #388e3c !important;
-  border-color: #388e3c;
-}
-
-body.dark-mode .option-button.incorrect {
-  background-color: #c62828 !important;
-  border-color: #c62828;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

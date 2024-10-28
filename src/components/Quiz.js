@@ -2,23 +2,42 @@
 
 import React, { useState, useEffect } from 'react';
 
-function Quiz({ words }) {
+function Quiz({ words, quizStarted, setQuizStarted }) {
+  // **State Variables**
+
+  // Current word being quizzed
   const [currentWord, setCurrentWord] = useState(null);
+
+  // Options for the multiple-choice question
   const [options, setOptions] = useState([]);
+
+  // Feedback message after answering
   const [feedback, setFeedback] = useState('');
-  const [quizStarted, setQuizStarted] = useState(false);
+
+  // Controls whether hints are shown
   const [showHint, setShowHint] = useState(false);
+
+  // Stores the hints for the current word
   const [hints, setHints] = useState([]);
-  const [usedHint, setUsedHint] = useState(false); // Track if hint was used
+
+  // Tracks if the user has used a hint for the current question
+  const [usedHint, setUsedHint] = useState(false);
+
+  // User's XP points, initialized from localStorage
   const [xp, setXp] = useState(() => {
     return parseInt(localStorage.getItem('xp')) || 0;
-  }); // XP points, initialized from localStorage
-  const [rank, setRank] = useState('Beginner'); // User rank
+  });
 
+  // User's rank based on XP
+  const [rank, setRank] = useState('Beginner');
+
+  // Index of the selected option
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
+
+  // Indicates whether the selected answer is correct
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
 
-  // Update rank based on XP and save XP to localStorage
+  // **Effect to Update Rank and Save XP to localStorage**
   useEffect(() => {
     localStorage.setItem('xp', xp);
 
@@ -33,7 +52,7 @@ function Quiz({ words }) {
     }
   }, [xp]);
 
-  // Calculate progress towards next rank
+  // **Calculate Progress Towards Next Rank**
   const getNextRankXp = () => {
     if (xp >= 150) return 200; // Arbitrary upper limit
     if (xp >= 100) return 150;
@@ -52,7 +71,7 @@ function Quiz({ words }) {
     ((xp - getCurrentRankBaseXp()) / (getNextRankXp() - getCurrentRankBaseXp())) *
     100;
 
-  // Start the quiz by selecting a random word
+  // **Start the Quiz**
   const startQuiz = () => {
     if (words.length === 0) {
       // Do not start the quiz if there are no words
@@ -60,15 +79,15 @@ function Quiz({ words }) {
     }
     generateQuestion();
     setFeedback('');
-    setQuizStarted(true);
     setShowHint(false);
     setHints([]);
     setUsedHint(false);
     setSelectedOptionIndex(null);
     setIsAnswerCorrect(null);
+    setQuizStarted(true); // Update quizStarted in App.js
   };
 
-  // Generate a new question with multiple-choice options
+  // **Generate a New Question**
   const generateQuestion = () => {
     // Select a random word as the current word
     const randomIndex = Math.floor(Math.random() * words.length);
@@ -87,7 +106,7 @@ function Quiz({ words }) {
     setUsedHint(false); // Reset hint usage for new question
   };
 
-  // Handle user's answer selection
+  // **Handle User's Answer Selection**
   const handleOptionClick = (selectedOption, index) => {
     if (feedback) {
       // Prevent multiple selections for the same question
@@ -119,7 +138,7 @@ function Quiz({ words }) {
     setIsAnswerCorrect(isCorrect);
   };
 
-  // Show hints (example sentences and synonyms)
+  // **Show Hints**
   const handleHint = () => {
     if (showHint) {
       // Hint already shown
@@ -161,7 +180,7 @@ function Quiz({ words }) {
     }
   };
 
-  // Proceed to the next word
+  // **Proceed to the Next Word**
   const handleNextWord = () => {
     generateQuestion();
     setFeedback('');
@@ -171,19 +190,20 @@ function Quiz({ words }) {
     setIsAnswerCorrect(null);
   };
 
-  // Reset the quiz to the initial state
+  // **Reset the Quiz**
   const handleReset = () => {
     setCurrentWord(null);
     setOptions([]);
     setFeedback('');
     setShowHint(false);
     setHints([]);
-    setQuizStarted(false);
+    setSelectedOptionIndex(null);
+    setIsAnswerCorrect(null);
     setXp(0);
     setRank('Beginner');
     localStorage.removeItem('xp');
-    setSelectedOptionIndex(null);
-    setIsAnswerCorrect(null);
+    setUsedHint(false);
+    setQuizStarted(false); // Update quizStarted in App.js
   };
 
   return (
@@ -200,7 +220,9 @@ function Quiz({ words }) {
             <div
               className="progress-bar"
               role="progressbar"
-              style={{ width: `${Math.min(Math.max(progressPercentage, 0), 100)}%` }}
+              style={{
+                width: `${Math.min(Math.max(progressPercentage, 0), 100)}%`,
+              }}
               aria-valuenow={progressPercentage}
               aria-valuemin="0"
               aria-valuemax="100"
@@ -215,7 +237,7 @@ function Quiz({ words }) {
         <p>Please add some words first!</p>
       ) : !quizStarted ? (
         <div className="start-quiz-container text-center">
-          <button className="btn btn-primary" onClick={startQuiz}>
+          <button className="btn btn-start-quiz" onClick={startQuiz}>
             Start Quiz
           </button>
         </div>
