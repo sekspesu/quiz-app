@@ -316,7 +316,13 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
           {/* Feedback */}
           {feedback && (
             <div className="alert alert-secondary">
-              <p className="feedback">{feedback}</p>
+              <p className="feedback">
+                {isAnswerCorrect ? (
+                  <span>✅ {feedback}</span>
+                ) : (
+                  <span>❌ {feedback}</span>
+                )}
+              </p>
             </div>
           )}
 
