@@ -78,7 +78,7 @@ function App() {
         </div>
       </div>
 
-      <div className="container">
+      <div className={`container ${quizStarted ? 'quiz-active' : ''}`}>
         {/* Header Image */}
         <img
           src={`${process.env.PUBLIC_URL}/header-image.jpg`}

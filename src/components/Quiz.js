@@ -37,6 +37,9 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
   // Indicates whether the selected answer is correct
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
 
+  // Animation state for question transitions
+  const [animateQuestion, setAnimateQuestion] = useState(false);
+
   // **Effect to Update Rank and Save XP to localStorage**
   useEffect(() => {
     localStorage.setItem('xp', xp);
@@ -85,6 +88,7 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
     setSelectedOptionIndex(null);
     setIsAnswerCorrect(null);
     setQuizStarted(true); // Update quizStarted in App.js
+    setAnimateQuestion(true); // Trigger animation
   };
 
   // **Generate a New Question**
@@ -182,33 +186,48 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
 
   // **Proceed to the Next Word**
   const handleNextWord = () => {
-    generateQuestion();
-    setFeedback('');
-    setShowHint(false);
-    setHints([]);
-    setSelectedOptionIndex(null);
-    setIsAnswerCorrect(null);
+    // Trigger exit animation
+    setAnimateQuestion(false);
+    
+    // Short delay before changing the question to allow for animation
+    setTimeout(() => {
+      generateQuestion();
+      setFeedback('');
+      setShowHint(false);
+      setHints([]);
+      setSelectedOptionIndex(null);
+      setIsAnswerCorrect(null);
+      
+      // Trigger entrance animation for new question
+      setTimeout(() => {
+        setAnimateQuestion(true);
+      }, 50);
+    }, 300);
   };
 
   // **Reset the Quiz**
   const handleReset = () => {
-    setCurrentWord(null);
-    setOptions([]);
-    setFeedback('');
-    setShowHint(false);
-    setHints([]);
-    setSelectedOptionIndex(null);
-    setIsAnswerCorrect(null);
-    setXp(0);
-    setRank('Beginner');
-    localStorage.removeItem('xp');
-    setUsedHint(false);
-    setQuizStarted(false); // Update quizStarted in App.js
+    setAnimateQuestion(false);
+    
+    setTimeout(() => {
+      setCurrentWord(null);
+      setOptions([]);
+      setFeedback('');
+      setShowHint(false);
+      setHints([]);
+      setSelectedOptionIndex(null);
+      setIsAnswerCorrect(null);
+      setXp(0);
+      setRank('Beginner');
+      localStorage.removeItem('xp');
+      setUsedHint(false);
+      setQuizStarted(false); // Update quizStarted in App.js
+    }, 300);
   };
 
   return (
     <div className="quiz-section">
-      <h2 className="mb-4 text-center">Take a Quiz</h2>
+      {!quizStarted && <h2 className="mb-4 text-center">Take a Quiz</h2>}
 
       {/* Display XP and Rank with Progress Bar */}
       {quizStarted && (
@@ -242,7 +261,7 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
           </button>
         </div>
       ) : currentWord ? (
-        <div>
+        <div className={`quiz-content ${animateQuestion ? 'animate-in' : 'animate-out'}`}>
           <p className="quiz-word lead">
             Translate: <strong>{currentWord.word}</strong>
           </p>
@@ -287,6 +306,7 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
                 }`}
                 onClick={() => handleOptionClick(option, index)}
                 disabled={!!feedback} // Disable buttons after an option is selected
+                style={{ animationDelay: `${0.1 + index * 0.1}s` }}
               >
                 {option.translation}
               </button>
