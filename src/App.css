@@ -6,11 +6,11 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /* Modern Gradient Background */
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  /* Dark Mode Gradient Background */
+  background: linear-gradient(135deg, #2b5876, #4e4376);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
-  color: #333;
+  color: #f0f0f0;
   transition: all 0.5s ease;
 }
 
@@ -28,10 +28,10 @@ body {
 
 /* Modern Container Styles */
 .container {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(30, 32, 44, 0.9);
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   animation: containerFadeIn 0.7s ease-out;
   margin: 30px auto;
@@ -81,7 +81,7 @@ body {
 /* App Title Animation */
 h1.my-4 {
   font-weight: 700;
-  background: linear-gradient(45deg, #6e8efb, #a777e3);
+  background: linear-gradient(45deg, #a777e3, #6e8efb);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -102,20 +102,20 @@ h1.my-4 {
 
 /* Quiz Started State - Compact Header */
 .quiz-active .header-image {
-  width: 80px;
-  margin: 0 auto 10px auto;
+  width: 60px;
+  margin: 0 auto 5px auto;
   animation: none;
   transform: translateY(0);
 }
 
 .quiz-active h1.my-4 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
   transform: translateY(0);
 }
 
 .quiz-active .container {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 /* Word Count Section */
@@ -131,7 +131,7 @@ h1.my-4 {
 }
 
 .word-count .btn-link {
-  color: #6e8efb;
+  color: #a777e3;
   text-decoration: none !important;
   font-weight: bold;
   padding: 0;
@@ -148,7 +148,7 @@ h1.my-4 {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #6e8efb;
+  background-color: #a777e3;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -214,20 +214,20 @@ h1.my-4 {
 
 .quiz-section h2 {
   font-weight: 600;
-  color: #6e8efb;
+  color: #a777e3;
   margin-bottom: 1.5rem;
   transition: all 0.5s ease;
   transform-origin: center;
 }
 
 .quiz-active .quiz-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
 }
 
 /* XP and Rank Container */
 .xp-rank-container {
-  background: rgba(110, 142, 251, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   padding: 15px;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -243,7 +243,7 @@ h1.my-4 {
 .progress {
   height: 20px !important;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
 
@@ -259,45 +259,56 @@ h1.my-4 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Quiz Word Styling */
+/* Quiz Word Styling - Enhanced for better visibility */
 .quiz-word {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
   animation: fadeIn 0.5s ease-out;
-  background: rgba(110, 142, 251, 0.1);
-  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Options Container */
+.quiz-word strong {
+  color: #a777e3;
+  font-size: 2.2rem;
+  display: block;
+  margin-top: 10px;
+  text-shadow: 0 2px 10px rgba(167, 119, 227, 0.3);
+}
+
+/* Options Container - Enhanced for better visibility */
 .options-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
 .option-button {
-  background-color: white;
-  border: 2px solid #e9ecef;
-  color: #333;
-  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: #f0f0f0;
+  padding: 18px;
   border-radius: 15px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   animation: slideInRight 0.5s forwards;
   animation-fill-mode: both;
+  letter-spacing: 0.5px;
 }
 
 .option-button:hover {
   transform: translateY(-2px);
-  border-color: #6e8efb;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: #a777e3;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .option-button.correct {
@@ -348,15 +359,15 @@ h1.my-4 {
 }
 
 .alert-info {
-  background-color: rgba(110, 142, 251, 0.1);
-  border: 1px solid rgba(110, 142, 251, 0.2);
-  color: #333;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f0f0f0;
 }
 
 .alert-secondary {
-  background-color: rgba(108, 117, 125, 0.1);
-  border: 1px solid rgba(108, 117, 125, 0.2);
-  color: #333;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f0f0f0;
 }
 
 /* Quiz Buttons */
@@ -402,128 +413,6 @@ h1.my-4 {
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Dark Mode Enhancements */
-body.dark-mode {
-  background: linear-gradient(135deg, #2b5876, #4e4376);
-  background-size: 400% 400%;
-  color: #f0f0f0;
-}
-
-body.dark-mode .container {
-  background-color: rgba(30, 32, 44, 0.9);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-body.dark-mode h1.my-4 {
-  background: linear-gradient(45deg, #a777e3, #6e8efb);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-body.dark-mode .word-count .btn-link {
-  color: #a777e3;
-}
-
-body.dark-mode .word-count .btn-link:after {
-  background-color: #a777e3;
-}
-
-body.dark-mode .quiz-section h2 {
-  color: #a777e3;
-}
-
-body.dark-mode .option-button {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-  color: #f0f0f0;
-}
-
-body.dark-mode .option-button:hover {
-  border-color: #a777e3;
-}
-
-body.dark-mode .alert-info,
-body.dark-mode .alert-secondary {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-  color: #f0f0f0;
-}
-
-body.dark-mode .quiz-word {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-body.dark-mode .xp-rank-container {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-body.dark-mode .progress {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Toggle Switch Styling */
-.toggle-switch {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 100;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 8px 15px;
-  border-radius: 50px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.form-check-input {
-  cursor: pointer;
-  width: 3rem;
-  height: 1.5rem;
-  margin-top: 0.25rem;
-  vertical-align: top;
-  background-color: rgba(255, 255, 255, 0.5);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-  transition: all 0.3s ease;
-  position: relative;
-  border-radius: 2rem;
-}
-
-.form-check-input:checked {
-  background-color: #a777e3;
-}
-
-.form-check-input:before {
-  content: '';
-  position: absolute;
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 50%;
-  top: 0.15rem;
-  left: 0.15rem;
-  background-color: white;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.form-check-input:checked:before {
-  left: calc(100% - 1.35rem);
-}
-
-.form-check-label {
-  margin-left: 10px;
-  font-weight: 500;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Additional Animations */
@@ -605,12 +494,6 @@ body.dark-mode .progress {
   }
 }
 
-/* Option Button Animations */
-.option-button {
-  animation: slideInRight 0.5s forwards;
-  animation-fill-mode: both;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .container {
@@ -618,16 +501,19 @@ body.dark-mode .progress {
     padding: 20px;
   }
   
-  .toggle-switch {
-    top: 10px;
-    right: 10px;
-  }
-  
   h1.my-4 {
     font-size: 2rem;
   }
   
   .quiz-active h1.my-4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  
+  .quiz-word {
+    font-size: 1.5rem;
+  }
+  
+  .quiz-word strong {
+    font-size: 1.8rem;
   }
 }

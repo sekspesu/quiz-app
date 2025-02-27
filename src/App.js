@@ -12,11 +12,15 @@ import Quiz from './components/Quiz';
 function App() {
   const [words, setWords] = useState([]);
   const [showAddWordForm, setShowAddWordForm] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const [quizStarted, setQuizStarted] = useState(false); // New state variable
 
   // Use the API URL from environment variables, with a fallback to 'http://localhost:5000'
   const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:5000').trim();
+
+  // Set dark mode by default
+  useEffect(() => {
+    document.body.classList.add('dark-mode');
+  }, []);
 
   // Load words from the backend when the app mounts
   useEffect(() => {
@@ -46,38 +50,8 @@ function App() {
     setShowAddWordForm(!showAddWordForm);
   };
 
-  // Function to toggle Dark Mode
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
-  // Add or remove the 'dark-mode' class on the body element
-  useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-  }, [isDarkMode]);
-
   return (
     <div className="App">
-      {/* Dark Mode Toggle Switch */}
-      <div className="toggle-switch">
-        <div className="form-check form-switch">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            id="darkModeSwitch"
-            checked={isDarkMode}
-            onChange={toggleDarkMode}
-          />
-          <label className="form-check-label" htmlFor="darkModeSwitch">
-            Dark Mode
-          </label>
-        </div>
-      </div>
-
       <div className={`container ${quizStarted ? 'quiz-active' : ''}`}>
         {/* Header Image */}
         <img
