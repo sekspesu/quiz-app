@@ -308,7 +308,7 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
                 disabled={!!feedback} // Disable buttons after an option is selected
                 style={{ animationDelay: `${0.1 + index * 0.1}s` }}
               >
-                {option.translation}
+                <span className="option-text">{option.translation}</span>
               </button>
             ))}
           </div>
