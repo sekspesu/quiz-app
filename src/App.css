@@ -6,10 +6,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /* Dark Mode Gradient Background */
-  background: linear-gradient(135deg, #2b5876, #4e4376);
-  background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
+  /* Dark Mode Gradient Background with Animation */
+  background: linear-gradient(135deg, #2b5876, #4e4376, #2C3E50, #4A00E0);
+  background-size: 800% 800%;
+  animation: gradientAnimation 20s ease infinite;
   color: #f0f0f0;
   transition: all 0.5s ease;
 }
@@ -18,8 +18,14 @@ body {
   0% {
     background-position: 0% 50%;
   }
+  25% {
+    background-position: 50% 0%;
+  }
   50% {
     background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
   }
   100% {
     background-position: 0% 50%;
@@ -28,7 +34,7 @@ body {
 
 /* Modern Container Styles */
 .container {
-  background-color: rgba(30, 32, 44, 0.9);
+  background-color: rgba(30, 32, 44, 0.85);
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -38,6 +44,8 @@ body {
   max-width: 800px;
   transition: all 0.5s ease;
   transform-origin: center top;
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @keyframes containerFadeIn {
@@ -67,6 +75,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   animation: floatAnimation 6s ease-in-out infinite;
   transition: all 0.5s ease;
+  border: 3px solid rgba(167, 119, 227, 0.3);
 }
 
 @keyframes floatAnimation {
@@ -89,6 +98,8 @@ h1.my-4 {
   transition: all 0.5s ease;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 10px rgba(167, 119, 227, 0.3);
 }
 
 @keyframes titlePulse {
@@ -102,16 +113,18 @@ h1.my-4 {
 
 /* Quiz Started State - Compact Header */
 .quiz-active .header-image {
-  width: 60px;
+  width: 50px;
   margin: 0 auto 5px auto;
   animation: none;
   transform: translateY(0);
+  border-width: 2px;
 }
 
 .quiz-active h1.my-4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 0.3rem;
   transform: translateY(0);
+  letter-spacing: 0.5px;
 }
 
 .quiz-active .container {
@@ -123,6 +136,12 @@ h1.my-4 {
   font-size: 1.2rem;
   animation: slideUp 0.7s ease-out;
   margin-bottom: 2rem;
+  color: #f0f0f0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .word-count p {
@@ -172,6 +191,7 @@ h1.my-4 {
   animation: pulseAnimation 2s infinite;
   position: relative;
   overflow: hidden;
+  letter-spacing: 1px;
 }
 
 .btn-start-quiz:before {
@@ -210,6 +230,7 @@ h1.my-4 {
 .quiz-section {
   animation: fadeIn 0.8s ease-out;
   transition: all 0.5s ease;
+  color: #f0f0f0;
 }
 
 .quiz-section h2 {
@@ -218,6 +239,7 @@ h1.my-4 {
   margin-bottom: 1.5rem;
   transition: all 0.5s ease;
   transform-origin: center;
+  text-shadow: 0 2px 10px rgba(167, 119, 227, 0.3);
 }
 
 .quiz-active .quiz-section h2 {
@@ -233,11 +255,13 @@ h1.my-4 {
   margin-bottom: 20px;
   animation: slideUp 0.5s ease-out;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .xp-rank-container p {
   margin-bottom: 10px;
   font-weight: 500;
+  color: #f0f0f0;
 }
 
 .progress {
@@ -264,11 +288,12 @@ h1.my-4 {
   font-size: 1.8rem;
   margin-bottom: 1.8rem;
   animation: fadeIn 0.5s ease-out;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f0f0f0;
 }
 
 .quiz-word strong {
@@ -277,6 +302,7 @@ h1.my-4 {
   display: block;
   margin-top: 10px;
   text-shadow: 0 2px 10px rgba(167, 119, 227, 0.3);
+  letter-spacing: 1px;
 }
 
 /* Options Container - Enhanced for better visibility */
@@ -370,6 +396,11 @@ h1.my-4 {
   color: #f0f0f0;
 }
 
+.feedback {
+  color: #f0f0f0;
+  font-size: 1.1rem;
+}
+
 /* Quiz Buttons */
 .quiz-buttons {
   margin-top: 20px;
@@ -384,6 +415,7 @@ h1.my-4 {
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
 }
 
 .btn-warning {
@@ -413,6 +445,30 @@ h1.my-4 {
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Styling */
+.add-word-form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideUp 0.7s ease-out;
+}
+
+.form-control {
+  background-color: rgba(30, 32, 44, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #f0f0f0 !important;
+  border-radius: 10px !important;
+  padding: 12px 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(167, 119, 227, 0.25) !important;
+  border-color: rgba(167, 119, 227, 0.5) !important;
 }
 
 /* Additional Animations */

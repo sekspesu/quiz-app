@@ -253,7 +253,7 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
       )}
 
       {words.length === 0 ? (
-        <p>Please add some words first!</p>
+        <p className="text-white">Please add some words first!</p>
       ) : !quizStarted ? (
         <div className="start-quiz-container text-center">
           <button className="btn btn-start-quiz" onClick={startQuiz}>
@@ -269,22 +269,22 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
           {/* Show hints if available */}
           {showHint && hints.length > 0 && (
             <div className="alert alert-info">
-              <h5>Hints:</h5>
+              <h5 className="text-white mb-3">Hints:</h5>
               {hints.map((hint, index) => {
                 if (hint.type === 'sentence') {
                   return (
-                    <p key={index}>
+                    <p key={index} className="text-white">
                       <strong>Example Sentence:</strong> {hint.content}
                     </p>
                   );
                 } else if (hint.type === 'synonyms') {
                   return (
-                    <p key={index}>
+                    <p key={index} className="text-white">
                       <strong>Synonyms:</strong> {hint.content.join(', ')}
                     </p>
                   );
                 } else if (hint.type === 'message') {
-                  return <p key={index}>{hint.content}</p>;
+                  return <p key={index} className="text-white">{hint.content}</p>;
                 } else {
                   return null;
                 }
@@ -335,7 +335,7 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
           </div>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p className="text-white">Loading...</p>
       )}
 
       {/* Reset Button */}

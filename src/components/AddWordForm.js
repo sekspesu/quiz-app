@@ -25,23 +25,23 @@ function AddWordForm({ onAddWord }) {
 
   return (
     <div className="add-word-form">
-      <h2 className="mb-4">Add a New Word</h2>
+      <h2 className="mb-4 text-white">Add a New Word</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Word in English:</label>
+        <div className="form-group mb-3">
+          <label className="text-white mb-2">Word in English:</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control bg-dark text-white border-secondary"
             value={word}
             onChange={(e) => setWord(e.target.value)}
             required
           />
         </div>
-        <div className="form-group">
-          <label>Translation:</label>
+        <div className="form-group mb-3">
+          <label className="text-white mb-2">Translation:</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control bg-dark text-white border-secondary"
             value={translation}
             onChange={(e) => setTranslation(e.target.value)}
             required
