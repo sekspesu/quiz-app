@@ -14,15 +14,6 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
   // Feedback message after answering
   const [feedback, setFeedback] = useState('');
 
-  // Controls whether hints are shown
-  const [showHint, setShowHint] = useState(false);
-
-  // Stores the hints for the current word
-  const [hints, setHints] = useState([]);
-
-  // Tracks if the user has used a hint for the current question
-  const [usedHint, setUsedHint] = useState(false);
-
   // User's XP points, initialized from localStorage
   const [xp, setXp] = useState(() => {
     return parseInt(localStorage.getItem('xp')) || 0;
@@ -86,9 +77,6 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
     }
     generateQuestion();
     setFeedback('');
-    setShowHint(false);
-    setHints([]);
-    setUsedHint(false);
     setSelectedOptionIndex(null);
     setIsAnswerCorrect(null);
     setQuizStarted(true); // Update quizStarted in App.js
@@ -111,7 +99,6 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
     // Combine correct and incorrect options and shuffle them
     const allOptions = [...incorrectOptions, word].sort(() => 0.5 - Math.random());
     setOptions(allOptions);
-    setUsedHint(false); // Reset hint usage for new question
   };
 
   // **Handle User's Answer Selection**
@@ -126,13 +113,8 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
     const isCorrect = selectedOption.translation === currentWord.translation;
 
     if (isCorrect) {
-      if (usedHint) {
-        newFeedback = 'Correct! (with hint)';
-        earnedXp = 5; // Less XP if hint was used
-      } else {
-        newFeedback = 'Correct!';
-        earnedXp = 10;
-      }
+      newFeedback = 'Correct!';
+      earnedXp = 10;
       // Start timer for correct answer
       setTimeLeft(2);
       const timerInterval = setInterval(() => {
@@ -172,48 +154,6 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
     setIsAnswerCorrect(isCorrect);
   };
 
-  // **Show Hints**
-  const handleHint = () => {
-    if (showHint) {
-      // Hint already shown
-      return;
-    }
-    setUsedHint(true); // Mark that hint was used
-    let hintsArray = [];
-
-    // Add an example sentence if available
-    if (
-      currentWord.exampleSentences &&
-      currentWord.exampleSentences.length > 0
-    ) {
-      const randomIndex = Math.floor(
-        Math.random() * currentWord.exampleSentences.length
-      );
-      hintsArray.push({
-        type: 'sentence',
-        content: currentWord.exampleSentences[randomIndex],
-      });
-    }
-
-    // Add synonyms if available
-    if (currentWord.synonyms && currentWord.synonyms.length > 0) {
-      hintsArray.push({
-        type: 'synonyms',
-        content: currentWord.synonyms,
-      });
-    }
-
-    if (hintsArray.length > 0) {
-      setHints(hintsArray);
-      setShowHint(true);
-    } else {
-      setHints([
-        { type: 'message', content: 'No hints available for this word.' },
-      ]);
-      setShowHint(true);
-    }
-  };
-
   // **Proceed to the Next Word**
   const handleNextWord = () => {
     // Clear any existing timer
@@ -230,8 +170,6 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
     setTimeout(() => {
       generateQuestion();
       setFeedback('');
-      setShowHint(false);
-      setHints([]);
       setSelectedOptionIndex(null);
       setIsAnswerCorrect(null);
       
@@ -259,14 +197,11 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
       setCurrentWord(null);
       setOptions([]);
       setFeedback('');
-      setShowHint(false);
-      setHints([]);
       setSelectedOptionIndex(null);
       setIsAnswerCorrect(null);
       setXp(0);
       setRank('Beginner');
       localStorage.removeItem('xp');
-      setUsedHint(false);
       setQuizStarted(false); // Update quizStarted in App.js
     }, 300);
   };
@@ -311,32 +246,6 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
           <p className="quiz-word lead">
             Translate: <strong>{currentWord.word}</strong>
           </p>
-
-          {/* Show hints if available */}
-          {showHint && hints.length > 0 && (
-            <div className="alert alert-info">
-              <h5 className="text-white mb-3">Hints:</h5>
-              {hints.map((hint, index) => {
-                if (hint.type === 'sentence') {
-                  return (
-                    <p key={index} className="text-white">
-                      <strong>Example Sentence:</strong> {hint.content}
-                    </p>
-                  );
-                } else if (hint.type === 'synonyms') {
-                  return (
-                    <p key={index} className="text-white">
-                      <strong>Synonyms:</strong> {hint.content.join(', ')}
-                    </p>
-                  );
-                } else if (hint.type === 'message') {
-                  return <p key={index} className="text-white">{hint.content}</p>;
-                } else {
-                  return null;
-                }
-              })}
-            </div>
-          )}
 
           {/* Multiple Choice Options */}
           <div className="options-container mb-3">
@@ -383,13 +292,6 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
 
           {/* Buttons */}
           <div className="quiz-buttons d-flex justify-content-center mb-3">
-            <button
-              className="btn btn-warning mx-2"
-              onClick={handleHint}
-              disabled={showHint}
-            >
-              {showHint ? 'Hint Used' : 'IDK/HINT'}
-            </button>
             {!isAnswerCorrect && feedback && (
               <button className="btn btn-success mx-2" onClick={handleNextWord}>
                 Next Word

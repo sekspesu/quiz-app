@@ -1,489 +1,219 @@
 [
   {
     "word": "EXQUISITE",
-    "translation": "Peen",
-    "synonyms": ["Elegant", "Delicate", "Refined", "Beautiful", "Fine"],
-    "exampleSentences": [
-      "The necklace was an exquisite piece of craftsmanship.",
-      "She has exquisite taste in music."
-    ]
+    "translation": "Peen"
   },
   {
     "word": "INITIALLY",
-    "translation": "Esialgu",
-    "synonyms": ["At first", "Originally", "Firstly", "In the beginning"],
-    "exampleSentences": [
-      "Initially, he didn't like the idea.",
-      "The project was initially planned for next year."
-    ]
+    "translation": "Esialgu"
   },
   {
     "word": "CONSTIPATION",
-    "translation": "Kõhukinnisus",
-    "synonyms": ["Irregularity", "Obstruction", "Blockage", "Sluggishness"],
-    "exampleSentences": [
-      "He suffered from constipation due to poor diet.",
-      "The medication may cause constipation."
-    ]
+    "translation": "Kõhukinnisus"
   },
   {
     "word": "SCRUTINIZE",
-    "translation": "Uurima",
-    "synonyms": ["Examine", "Inspect", "Study", "Analyze", "Review"],
-    "exampleSentences": [
-      "The detective scrutinized the evidence carefully.",
-      "Please scrutinize the report before the meeting."
-    ]
+    "translation": "Uurima"
   },
   {
     "word": "PREDOMINANTLY",
-    "translation": "Valdavalt",
-    "synonyms": ["Mainly", "Primarily", "Mostly", "Chiefly", "Largely"],
-    "exampleSentences": [
-      "The population is predominantly rural.",
-      "The weather is predominantly sunny in the summer."
-    ]
+    "translation": "Valdavalt"
   },
   {
     "word": "SUBSEQUENT",
-    "translation": "Järgne",
-    "synonyms": ["Following", "Later", "Succeeding", "Ensuring", "Coming after"],
-    "exampleSentences": [
-      "The first meeting was a success, but the subsequent ones were not.",
-      "Subsequent events proved him right."
-    ]
+    "translation": "Järgne"
   },
   {
     "word": "ERRONEOUSLY",
-    "translation": "Ekslikult",
-    "synonyms": ["Mistakenly", "Incorrectly", "Wrongly", "Inaccurately", "Faultily"],
-    "exampleSentences": [
-      "The data was erroneously entered into the system.",
-      "He was erroneously accused of the crime."
-    ]
+    "translation": "Ekslikult"
   },
   {
     "word": "VIGILANT",
-    "translation": "Valvas",
-    "synonyms": ["Watchful", "Alert", "Attentive", "Observant", "Cautious"],
-    "exampleSentences": [
-      "Security guards remained vigilant throughout the night.",
-      "Be vigilant about your surroundings when traveling alone."
-    ]
+    "translation": "Valvas"
   },
   {
     "word": "ENDEAVOURS",
-    "translation": "Ettevõtmised",
-    "synonyms": ["Efforts", "Attempts", "Ventures", "Undertakings", "Pursuits"],
-    "exampleSentences": [
-      "He succeeded in his academic endeavours.",
-      "Our endeavours resulted in significant progress."
-    ]
+    "translation": "Ettevõtmised"
   },
   {
     "word": "RECREATIONAL",
-    "translation": "Meelelahutuslik",
-    "synonyms": ["Leisure", "Fun", "Amusement", "Entertainment", "Hobbyist"],
-    "exampleSentences": [
-      "We went on a recreational trip last weekend.",
-      "The park offers many recreational activities."
-    ]
+    "translation": "Meelelahutuslik"
   },
   {
     "word": "IMPLICIT",
-    "translation": "Kaudne",
-    "synonyms": ["Indirect", "Implied", "Unspoken", "Inherent", "Tacit"],
-    "exampleSentences": [
-      "Her silence was taken as implicit agreement.",
-      "There was an implicit understanding between them."
-    ]
+    "translation": "Kaudne"
   },
   {
     "word": "PLAGUE",
-    "translation": "Katk",
-    "synonyms": ["Epidemic", "Pestilence", "Disease", "Affliction", "Curse"],
-    "exampleSentences": [
-      "The plague spread rapidly throughout the country.",
-      "Locusts can plague the crops during the summer."
-    ]
+    "translation": "Katk"
   },
   {
     "word": "EXTINGUISHING",
-    "translation": "Kustutamine",
-    "synonyms": ["Putting out", "Quenching", "Snuffing out", "Dousing", "Suppressing"],
-    "exampleSentences": [
-      "Firefighters are extinguishing the blaze.",
-      "Extinguishing the candle, she went to bed."
-    ]
+    "translation": "Kustutamine"
   },
   {
     "word": "IMPALING",
-    "translation": "Läbistamine",
-    "synonyms": ["Piercing", "Spearing", "Skewering", "Stabbing", "Penetrating"],
-    "exampleSentences": [
-      "The warrior was impaling his enemies with a spear.",
-      "He accidentally impaled his hand on a sharp object."
-    ]
+    "translation": "Läbistamine"
   },
   {
     "word": "PERCEPTION",
-    "translation": "Taju",
-    "synonyms": ["Awareness", "Understanding", "Insight", "Observation", "Recognition"],
-    "exampleSentences": [
-      "His perception of the problem is different from mine.",
-      "The artist has a unique perception of colors."
-    ]
+    "translation": "Taju"
   },
   {
     "word": "PROMISCUOUS",
-    "translation": "Liiderlik",
-    "synonyms": ["Immoral", "Licentious", "Unrestrained", "Indiscriminate", "Loose"],
-    "exampleSentences": [
-      "She was criticized for her promiscuous behavior.",
-      "The book portrays a promiscuous lifestyle."
-    ]
+    "translation": "Liiderlik"
   },
   {
     "word": "PETRIFY",
-    "translation": "Kivistama",
-    "synonyms": ["Terrify", "Stun", "Shock", "Paralyze", "Transfix"],
-    "exampleSentences": [
-      "The horror movie petrified the audience.",
-      "He was petrified with fear when he saw the snake."
-    ]
+    "translation": "Kivistama"
   },
   {
     "word": "LEISURE",
-    "translation": "Vaba aeg",
-    "synonyms": ["Free time", "Spare time", "Relaxation", "Recreation", "Rest"],
-    "exampleSentences": [
-      "She enjoys reading during her leisure.",
-      "They spent their leisure time hiking."
-    ]
+    "translation": "Vaba aeg"
   },
   {
     "word": "DIVERSE",
-    "translation": "Mitmekesine",
-    "synonyms": ["Varied", "Various", "Different", "Assorted", "Mixed"],
-    "exampleSentences": [
-      "The city has a diverse population.",
-      "They offer a diverse range of products."
-    ]
+    "translation": "Mitmekesine"
   },
   {
     "word": "SHIN",
-    "translation": "Säär",
-    "synonyms": ["Tibia", "Lower leg", "Shank"],
-    "exampleSentences": [
-      "He injured his shin during the soccer match.",
-      "She felt pain in her shin after jogging."
-    ]
+    "translation": "Säär"
   },
   {
     "word": "HUMILITY",
-    "translation": "Alandlikkus",
-    "synonyms": ["Modesty", "Humbleness", "Meekness", "Unpretentiousness"],
-    "exampleSentences": [
-      "His humility makes him a great leader.",
-      "She accepted the award with humility."
-    ]
+    "translation": "Alandlikkus"
   },
   {
     "word": "ANTICIPATED",
-    "translation": "Eeldatav",
-    "synonyms": ["Expected", "Predicted", "Foreseen", "Awaited"],
-    "exampleSentences": [
-      "The anticipated results were finally achieved.",
-      "The team delivered the anticipated performance."
-    ]
+    "translation": "Eeldatav"
   },
   {
     "word": "EVOLVE",
-    "translation": "Arenema",
-    "synonyms": ["Develop", "Progress", "Grow", "Advance", "Mature"],
-    "exampleSentences": [
-      "Species evolve over time.",
-      "His ideas have evolved since we last spoke."
-    ]
+    "translation": "Arenema"
   },
   {
     "word": "ALIGNMENT",
-    "translation": "Joondus",
-    "synonyms": ["Arrangement", "Positioning", "Order", "Adjustment", "Placement"],
-    "exampleSentences": [
-      "The wheels need alignment.",
-      "There is an alignment between their goals."
-    ]
+    "translation": "Joondus"
   },
   {
     "word": "PEASANT",
-    "translation": "Talupoeg",
-    "synonyms": ["Farmer", "Villager", "Agricultural worker", "Countryman"],
-    "exampleSentences": [
-      "The peasants worked hard in the fields.",
-      "The story is about a peasant's life in medieval times."
-    ]
+    "translation": "Talupoeg"
   },
   {
     "word": "PREVAILS",
-    "translation": "Valitseb",
-    "synonyms": ["Dominates", "Reigns", "Rules", "Persists", "Exists"],
-    "exampleSentences": [
-      "Justice prevails in the end.",
-      "A sense of optimism prevails among the team."
-    ]
+    "translation": "Valitseb"
   },
   {
     "word": "INCOHERENT",
-    "translation": "Seosetu",
-    "synonyms": ["Unclear", "Disjointed", "Illogical", "Confused", "Incomprehensible"],
-    "exampleSentences": [
-      "His speech was so incoherent we couldn't understand him.",
-      "The essay was incoherent and lacked structure."
-    ]
+    "translation": "Seosetu"
   },
   {
     "word": "CONTEMPORARY",
-    "translation": "Kaasaegne",
-    "synonyms": ["Modern", "Current", "Present-day", "Up-to-date"],
-    "exampleSentences": [
-      "She prefers contemporary art.",
-      "Contemporary issues need contemporary solutions."
-    ]
+    "translation": "Kaasaegne"
   },
   {
     "word": "UNVETTED",
-    "translation": "Kontrollimata",
-    "synonyms": ["Unverified", "Unchecked", "Unscrutinized", "Not assessed"],
-    "exampleSentences": [
-      "They hired an unvetted employee.",
-      "Be cautious with unvetted information."
-    ]
+    "translation": "Kontrollimata"
   },
   {
     "word": "CYNICISM",
-    "translation": "Küünilisus",
-    "synonyms": ["Skepticism", "Pessimism", "Distrust", "Misanthropy"],
-    "exampleSentences": [
-      "His cynicism prevents him from trusting others.",
-      "The article reflects a deep cynicism about politics."
-    ]
+    "translation": "Küünilisus"
   },
   {
     "word": "CONSCIENCE",
-    "translation": "Südametunnistus",
-    "synonyms": ["Moral sense", "Scruples", "Ethics", "Principles"],
-    "exampleSentences": [
-      "He couldn't lie; his conscience wouldn't allow it.",
-      "She has a guilty conscience."
-    ]
+    "translation": "Südametunnistus"
   },
   {
     "word": "AUDACIOUS",
-    "translation": "Jultunud",
-    "synonyms": ["Bold", "Daring", "Brave", "Fearless", "Adventurous"],
-    "exampleSentences": [
-      "His audacious plan surprised everyone.",
-      "The audacious explorer ventured into uncharted territory."
-    ]
+    "translation": "Jultunud"
   },
   {
     "word": "INCENTIVES",
-    "translation": "Stiimulid",
-    "synonyms": ["Motivation", "Encouragement", "Inducement", "Stimulus", "Reason"],
-    "exampleSentences": [
-      "The company offers incentives to its employees.",
-      "Financial incentives can boost productivity."
-    ]
+    "translation": "Stiimulid"
   },
   {
     "word": "PERISHABLE",
-    "translation": "Riknev",
-    "synonyms": ["Spoilable", "Short-lived", "Decaying", "Fleeting", "Ephemeral"],
-    "exampleSentences": [
-      "Store perishable goods in the refrigerator.",
-      "Perishable items must be consumed quickly."
-    ]
+    "translation": "Riknev"
   },
   {
     "word": "INACTION",
-    "translation": "Tegevusetus",
-    "synonyms": ["Inactivity", "Idleness", "Lethargy", "Passivity", "Stagnation"],
-    "exampleSentences": [
-      "His inaction led to missed opportunities.",
-      "The government's inaction was heavily criticized."
-    ]
+    "translation": "Tegevusetus"
   },
   {
     "word": "INSIDIOUS",
-    "translation": "Salakaval",
-    "synonyms": ["Sneaky", "Subtle", "Deceitful", "Cunning", "Crafty"],
-    "exampleSentences": [
-      "The disease is insidious and hard to detect early.",
-      "There was an insidious side to his charm."
-    ]
+    "translation": "Salakaval"
   },
   {
     "word": "EMERGENT",
-    "translation": "Esilekerkiv",
-    "synonyms": ["Developing", "Rising", "Nascent", "New", "Growing"],
-    "exampleSentences": [
-      "The emergent trends in technology are fascinating.",
-      "He is an emergent leader in the community."
-    ]
+    "translation": "Esilekerkiv"
   },
   {
     "word": "COMPOUNDING",
-    "translation": "Ühendamine",
-    "synonyms": ["Combining", "Adding", "Accumulating", "Aggregating", "Mixing"],
-    "exampleSentences": [
-      "Compounding interest can grow your savings.",
-      "The problems are compounding daily."
-    ]
+    "translation": "Ühendamine"
   },
   {
     "word": "BOWEL",
-    "translation": "Soolestik",
-    "synonyms": ["Intestine", "Gut", "Colon"],
-    "exampleSentences": [
-      "He has a bowel disorder.",
-      "The surgery involved the lower bowel."
-    ]
+    "translation": "Soolestik"
   },
   {
     "word": "PRESERVE",
-    "translation": "Säilitama",
-    "synonyms": ["Maintain", "Protect", "Keep", "Save", "Conserve"],
-    "exampleSentences": [
-      "We need to preserve our natural resources.",
-      "The jam will help preserve the fruit."
-    ]
+    "translation": "Säilitama"
   },
   {
     "word": "ENTITY",
-    "translation": "Üksus",
-    "synonyms": ["Body", "Organization", "Being", "Unit", "Structure"],
-    "exampleSentences": [
-      "The two companies merged into one entity.",
-      "Each department functions as a separate entity."
-    ]
+    "translation": "Üksus"
   },
   {
     "word": "STUMBLE",
-    "translation": "Komistama",
-    "synonyms": ["Trip", "Slip", "Fall", "Totter", "Blunder"],
-    "exampleSentences": [
-      "He stumbled over a rock.",
-      "She stumbled through her speech."
-    ]
+    "translation": "Komistama"
   },
   {
     "word": "VAGUE",
-    "translation": "Ebamäärane",
-    "synonyms": ["Unclear", "Ambiguous", "Obscure", "Indistinct", "Hazy"],
-    "exampleSentences": [
-      "His explanation was vague and unhelpful.",
-      "She had a vague idea of what she wanted."
-    ]
+    "translation": "Ebamäärane"
   },
   {
     "word": "RELENTLESS",
-    "translation": "Järeleandmatu",
-    "synonyms": ["Persistent", "Unceasing", "Unyielding", "Incessant", "Merciless"],
-    "exampleSentences": [
-      "The sun was relentless in the desert.",
-      "He pursued his goals with relentless determination."
-    ]
+    "translation": "Järeleandmatu"
   },
   {
     "word": "DILUTE",
-    "translation": "Lahjendama",
-    "synonyms": ["Thin", "Weaken", "Water down", "Reduce", "Lessen"],
-    "exampleSentences": [
-      "Dilute the juice with water.",
-      "The effect was diluted over time."
-    ]
+    "translation": "Lahjendama"
   },
   {
     "word": "SATURATION",
-    "translation": "Küllastus",
-    "synonyms": ["Fullness", "Saturation point", "Drenching", "Satiation", "Saturation level"],
-    "exampleSentences": [
-      "The market reached saturation.",
-      "The colors in the painting have high saturation."
-    ]
+    "translation": "Küllastus"
   },
   {
     "word": "INCREMENTALLY",
-    "translation": "Järk-järgult",
-    "synonyms": ["Gradually", "Progressively", "Step by step", "By degrees"],
-    "exampleSentences": [
-      "We will implement the changes incrementally.",
-      "The costs increased incrementally over time."
-    ]
+    "translation": "Järk-järgult"
   },
   {
     "word": "DEPRECATED",
-    "translation": "Aegunud",
-    "synonyms": ["Obsolete", "Outdated", "Disapproved", "Obsolescent"],
-    "exampleSentences": [
-      "This method is deprecated in the latest version.",
-      "Using deprecated functions can cause errors."
-    ]
+    "translation": "Aegunud"
   },
   {
     "word": "PARSING",
-    "translation": "Parsimine",
-    "synonyms": ["Analyzing", "Interpreting", "Processing", "Deciphering"],
-    "exampleSentences": [
-      "Parsing the data took several hours.",
-      "The compiler is parsing the code."
-    ]
+    "translation": "Parsimine"
   },
   {
     "word": "JADED",
-    "translation": "Tüdinenud",
-    "synonyms": ["Weary", "Bored", "Tired", "Cynical", "Fatigued"],
-    "exampleSentences": [
-      "She became jaded with city life.",
-      "After years of touring, the musician felt jaded."
-    ]
+    "translation": "Tüdinenud"
   },
   {
     "word": "TEDIOUS",
-    "translation": "Tüütu",
-    "synonyms": ["Boring", "Monotonous", "Dull", "Repetitive", "Wearisome"],
-    "exampleSentences": [
-      "The tedious task took all day.",
-      "He found the lecture tedious."
-    ]
+    "translation": "Tüütu"
   },
   {
     "word": "FIDDLING",
-    "translation": "Näperdamine",
-    "synonyms": ["Fidgeting", "Tinkering", "Messing around", "Adjusting", "Playing with"],
-    "exampleSentences": [
-      "Stop fiddling with your pen.",
-      "He was fiddling with the radio knobs."
-    ]
+    "translation": "Näperdamine"
   },
   {
     "word": "SOUGHT",
-    "translation": "Otsitud",
-    "synonyms": ["Looked for", "Searched for", "Desired", "Wanted"],
-    "exampleSentences": [
-      "The treasure was long sought by explorers.",
-      "She sought advice from her mentor."
-    ]
+    "translation": "Otsitud"
   },
   {
     "word": "CONSTRAINTS",
-    "translation": "Piirangud",
-    "synonyms": ["Restrictions", "Limitations", "Boundaries", "Restraints"],
-    "exampleSentences": [
-      "We must work within the constraints of the budget.",
-      "Time constraints prevented them from finishing."
-    ]
+    "translation": "Piirangud"
   },
   {
     "word": "PERPETUAL",
