@@ -385,47 +385,36 @@ h1.my-4 {
 
 /* Feedback Alert */
 .alert {
-  border-radius: 15px;
+  border-radius: 8px;
   padding: 15px;
-  margin-bottom: 20px;
-  animation: slideUp 0.5s ease-out;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .alert-success {
-  background-color: rgba(40, 167, 69, 0.15);
-  border: 1px solid rgba(40, 167, 69, 0.3);
+  background-color: #1b5e20;  /* Dark green background */
+  border: 2px solid #2e7d32;
   color: #ffffff;
 }
 
 .alert-danger {
-  background-color: rgba(220, 53, 69, 0.15);
-  border: 1px solid rgba(220, 53, 69, 0.3);
+  background-color: #b71c1c;  /* Dark red background */
+  border: 2px solid #c62828;
   color: #ffffff;
 }
 
 .feedback {
   color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  letter-spacing: 0.5px;
-  line-height: 1.5;
-  margin-bottom: 0;
-}
-
-.feedback strong {
-  color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .feedback-timer {
-  color: #f0f0f0;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  letter-spacing: 0.5px;
-  margin: 15px 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 /* Quiz Buttons */
