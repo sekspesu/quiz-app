@@ -393,13 +393,13 @@ h1.my-4 {
 }
 
 .alert-success {
-  background-color: #1b5e20;  /* Dark green background */
+  background-color: #1a472a;  /* Darker green for feedback box */
   border: 2px solid #2e7d32;
   color: #ffffff;
 }
 
 .alert-danger {
-  background-color: #b71c1c;  /* Dark red background */
+  background-color: #8b0000;  /* Darker red for feedback box */
   border: 2px solid #c62828;
   color: #ffffff;
 }
