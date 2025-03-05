@@ -364,7 +364,7 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
             <div className="alert alert-secondary">
               <p className="feedback">
                 {isAnswerCorrect ? (
-                  <span>✅ <strong>{feedback}</strong> ({timeLeft}s)</span>
+                  <span>({timeLeft}s)</span>
                 ) : (
                   <span>❌ <strong>{feedback}</strong> ({timeLeft}s)</span>
                 )}
