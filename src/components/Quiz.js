@@ -149,6 +149,19 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
     } else {
       newFeedback = `Incorrect. The correct translation is "${currentWord.translation}".`;
       earnedXp = -2; // Deduct XP for incorrect answer
+      // Start 5-second timer for incorrect answer
+      setTimeLeft(5);
+      const timerInterval = setInterval(() => {
+        setTimeLeft((prev) => {
+          if (prev <= 1) {
+            clearInterval(timerInterval);
+            handleNextWord();
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+      setTimer(timerInterval);
     }
 
     setXp((prevXp) => Math.max(prevXp + earnedXp, 0)); // Ensure XP doesn't go below 0
