@@ -361,15 +361,17 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
 
           {/* Feedback */}
           {feedback && (
-            <div className="alert alert-secondary">
-              <p className="feedback">
-                {isAnswerCorrect ? (
-                  <span>({timeLeft}s)</span>
-                ) : (
-                  <span>❌ <strong>{feedback}</strong> ({timeLeft}s)</span>
-                )}
-              </p>
-            </div>
+            <>
+              {isAnswerCorrect ? (
+                <p className="feedback-timer">({timeLeft}s)</p>
+              ) : (
+                <div className="alert alert-secondary">
+                  <p className="feedback">
+                    <span>❌ <strong>{feedback}</strong> ({timeLeft}s)</span>
+                  </p>
+                </div>
+              )}
+            </>
           )}
 
           {/* Buttons */}
