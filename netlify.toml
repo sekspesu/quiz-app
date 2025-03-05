@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+# Redirect /quiz path to the quiz app
+[[redirects]]
+  from = "/quiz/*"
+  to = "/index.html"
+  status = 200
+
+# Redirect root to the landing page
+[[redirects]]
+  from = "/"
+  to = "/landing/index.html"
+  status = 200
+
+# Handle all other routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 

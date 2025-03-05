@@ -40,6 +40,10 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
   // Animation state for question transitions
   const [animateQuestion, setAnimateQuestion] = useState(false);
 
+  // Timer state for auto-progress
+  const [timer, setTimer] = useState(null);
+  const [timeLeft, setTimeLeft] = useState(0);
+
   // **Effect to Update Rank and Save XP to localStorage**
   useEffect(() => {
     localStorage.setItem('xp', xp);
@@ -129,6 +133,19 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
         newFeedback = 'Correct!';
         earnedXp = 10;
       }
+      // Start timer for correct answer
+      setTimeLeft(2);
+      const timerInterval = setInterval(() => {
+        setTimeLeft((prev) => {
+          if (prev <= 1) {
+            clearInterval(timerInterval);
+            handleNextWord();
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+      setTimer(timerInterval);
     } else {
       newFeedback = `Incorrect. The correct translation is "${currentWord.translation}".`;
       earnedXp = -2; // Deduct XP for incorrect answer
@@ -186,6 +203,13 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
 
   // **Proceed to the Next Word**
   const handleNextWord = () => {
+    // Clear any existing timer
+    if (timer) {
+      clearInterval(timer);
+      setTimer(null);
+      setTimeLeft(0);
+    }
+
     // Trigger exit animation
     setAnimateQuestion(false);
     
@@ -204,6 +228,15 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
       }, 50);
     }, 300);
   };
+
+  // Cleanup timer on component unmount
+  useEffect(() => {
+    return () => {
+      if (timer) {
+        clearInterval(timer);
+      }
+    };
+  }, [timer]);
 
   // **Reset the Quiz**
   const handleReset = () => {
@@ -318,7 +351,7 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
             <div className="alert alert-secondary">
               <p className="feedback">
                 {isAnswerCorrect ? (
-                  <span>✅ <strong>{feedback}</strong></span>
+                  <span>✅ <strong>{feedback}</strong> ({timeLeft}s)</span>
                 ) : (
                   <span>❌ <strong>{feedback}</strong></span>
                 )}
@@ -335,9 +368,11 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
             >
               {showHint ? 'Hint Used' : 'IDK/HINT'}
             </button>
-            <button className="btn btn-success mx-2" onClick={handleNextWord}>
-              Next Word
-            </button>
+            {!isAnswerCorrect && (
+              <button className="btn btn-success mx-2" onClick={handleNextWord}>
+                Next Word
+              </button>
+            )}
           </div>
         </div>
       ) : (
