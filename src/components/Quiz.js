@@ -363,9 +363,16 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
           {feedback && (
             <>
               {isAnswerCorrect ? (
-                <p className="feedback-timer">({timeLeft}s)</p>
+                <div className="alert alert-success">
+                  <p className="feedback">
+                    <span>✅ <strong>{feedback}</strong> ({timeLeft}s)</span>
+                  </p>
+                  <button className="btn btn-success mt-2" onClick={handleNextWord}>
+                    Next Word
+                  </button>
+                </div>
               ) : (
-                <div className="alert alert-secondary">
+                <div className="alert alert-danger">
                   <p className="feedback">
                     <span>❌ <strong>{feedback}</strong> ({timeLeft}s)</span>
                   </p>
@@ -383,7 +390,7 @@ function Quiz({ words, quizStarted, setQuizStarted }) {
             >
               {showHint ? 'Hint Used' : 'IDK/HINT'}
             </button>
-            {!isAnswerCorrect && (
+            {!isAnswerCorrect && feedback && (
               <button className="btn btn-success mx-2" onClick={handleNextWord}>
                 Next Word
               </button>
